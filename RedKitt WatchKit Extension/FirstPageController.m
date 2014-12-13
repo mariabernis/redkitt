@@ -1,30 +1,30 @@
 //
-//  InterfaceController.m
-//  RedKitt WatchKit Extension
+//  FirstPageController.m
+//  RedKitt
 //
 //  Created by Pol Quintana on 13/12/14.
 //  Copyright (c) 2014 Pol Quintana. All rights reserved.
 //
 
-#import "InterfaceController.h"
+#import "FirstPageController.h"
 
 
-@interface InterfaceController()
+@interface FirstPageController()
+
 @property (weak, nonatomic) IBOutlet WKInterfaceImage *taskIconImageView;
-@property (weak, nonatomic) IBOutlet WKInterfaceLabel *taskTitleLabel;
 @property (weak, nonatomic) IBOutlet WKInterfaceLabel *taskNameLabel;
 @property (weak, nonatomic) IBOutlet WKInterfaceLabel *taskDate;
 
+#warning Complete!!
+//@property (nonatomic, strong) TaskObject *task;
+
 @end
 
-
-@implementation InterfaceController
+@implementation FirstPageController
 
 - (void)awakeWithContext:(id)context {
     [super awakeWithContext:context];
     
-    [self populateScreen];
-
     // Configure interface objects here.
     NSLog(@"%@ awakeWithContext", self);
 }
@@ -32,6 +32,8 @@
 - (void)willActivate {
     // This method is called when watch view controller is about to be visible to user
     NSLog(@"%@ will activate", self);
+    
+    [self populateScreen];
 }
 
 - (void)didDeactivate {
@@ -44,12 +46,31 @@
 
 - (void)populateScreen {
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    formatter.dateFormat = @"dd MMM - HH:mm";
+    formatter.dateFormat = @" dd MMM";
     
-    self.taskTitleLabel.text = @"taskTitle";
+#warning Ale method to get the task
+    //self.task = METODO ALESANDRO PARA SACAR EL OBJETO TASK
+    
+#warning Change @"taskName" with self.task.name and [NSDate date] with self.task.date
+    
     self.taskNameLabel.text = @"taskName";
-    self.taskDate.text = [formatter stringFromDate:[NSDate date]];
+    self.taskDate.text = [[formatter stringFromDate:[NSDate date]] uppercaseString];
 }
+
+#pragma mark - Buttons
+
+- (IBAction)markTaskAsCompleted {
+    
+}
+
+- (IBAction)changeStatusButtonTap {
+    //Passar el self.task como context
+#warning Complete!!
+
+    
+    [self presentControllerWithName:@"ChangeStatus" context:nil];
+}
+
 
 @end
 

@@ -5,39 +5,43 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3735"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
+        <!--First Page Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController">
+                <controller id="AgC-eL-Hgc" customClass="FirstPageController">
                     <items>
                         <group width="1" alignment="left" hasDetent="YES" id="7JE-4H-Bzi">
                             <items>
                                 <imageView width="30" height="30" alignment="left" image="default" id="f9z-QI-8Qj"/>
-                                <label width="100.5" height="30" alignment="left" text="Title" textAlignment="left" id="GWl-Do-Ruh"/>
+                                <label width="100.5" height="30" alignment="left" text="Date" textAlignment="left" id="GWl-Do-Ruh"/>
                             </items>
                         </group>
-                        <label alignment="left" text="Label" id="leD-DO-gP8"/>
-                        <label alignment="left" text="Label" id="V6v-aG-cPi"/>
+                        <label width="140" height="71.5" alignment="center" text="Label" numberOfLines="0" id="leD-DO-gP8">
+                            <variation key="device=watch38mm" width="120"/>
+                            <variation key="device=watch42mm" width="140"/>
+                        </label>
                         <group width="1" alignment="left" verticalAlignment="bottom" hasDetent="YES" id="U7p-9X-TAY">
                             <items>
-                                <button width="0.5" alignment="left" title="Complete" id="l4W-xd-D3I">
-                                    <color key="backgroundColor" red="0.36275380849838257" green="0.69353151321411133" blue="0.33955079317092896" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <fontDescription key="font" type="system" pointSize="11"/>
-                                </button>
-                                <button width="0.5" alignment="right" title="..." id="14b-Gh-6nj">
+                                <button width="0.5" alignment="right" title="Complete" id="14b-Gh-6nj">
+                                    <color key="titleColor" red="0.71663671731948853" green="0.91973352432250977" blue="0.50484579801559448" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <fontDescription key="font" type="system" pointSize="11"/>
                                     <connections>
-                                        <segue destination="LaQ-AY-gKs" kind="modal" id="LKP-N4-Q96"/>
+                                        <action selector="markTaskAsCompleted" destination="AgC-eL-Hgc" id="iKc-le-1Ei"/>
+                                    </connections>
+                                </button>
+                                <button width="0.5" alignment="left" title="..." id="l4W-xd-D3I">
+                                    <fontDescription key="font" type="system" pointSize="11"/>
+                                    <connections>
+                                        <action selector="changeStatusButtonTap" destination="AgC-eL-Hgc" id="S0c-1S-tAK"/>
                                     </connections>
                                 </button>
                             </items>
                         </group>
                     </items>
                     <connections>
-                        <outlet property="taskDate" destination="V6v-aG-cPi" id="Llg-ge-qfe"/>
-                        <outlet property="taskIconImageView" destination="f9z-QI-8Qj" id="fn5-GV-3Hd"/>
-                        <outlet property="taskNameLabel" destination="leD-DO-gP8" id="Xxh-u4-ms2"/>
-                        <outlet property="taskTitleLabel" destination="GWl-Do-Ruh" id="eta-fZ-RWY"/>
+                        <outlet property="taskDate" destination="GWl-Do-Ruh" id="aRI-xK-d6O"/>
+                        <outlet property="taskIconImageView" destination="f9z-QI-8Qj" id="WJr-Sl-WRa"/>
+                        <outlet property="taskNameLabel" destination="leD-DO-gP8" id="lx4-dG-2bU"/>
                         <segue destination="gdf-ec-U0h" kind="relationship" relationship="nextPage" id="i5H-H0-uGa"/>
                     </connections>
                 </controller>
@@ -47,7 +51,7 @@
         <!--Back-->
         <scene sceneID="gNF-iO-spq">
             <objects>
-                <controller title="Back" id="LaQ-AY-gKs" customClass="ChangeStatusInterfaceController">
+                <controller identifier="ChangeStatus" title="Back" id="LaQ-AY-gKs" customClass="ChangeStatusInterfaceController">
                     <items>
                         <group width="1" alignment="left" hasDetent="YES" id="E19-4c-aot">
                             <items>
@@ -76,27 +80,92 @@
                     </items>
                     <connections>
                         <outlet property="rejectButtonOutlet" destination="xBX-DT-4ka" id="QuK-BG-gKS"/>
+                        <outlet property="taskNameLabel" destination="w1G-ES-mNh" id="Cmu-kK-cVj"/>
                     </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="459" y="40.5"/>
         </scene>
-        <!--Interface Controller-->
+        <!--Second Page Controller-->
         <scene sceneID="PmW-f9-L8q">
             <objects>
-                <controller id="gdf-ec-U0h">
+                <controller id="gdf-ec-U0h" customClass="SecondPageController">
+                    <items>
+                        <group width="1" alignment="left" hasDetent="YES" id="H0S-Nh-aGN">
+                            <items>
+                                <imageView width="30" height="30" alignment="left" image="default" id="G7a-Sg-6Au"/>
+                                <label width="100.5" height="30" alignment="left" text="Date" textAlignment="left" id="UuB-h1-YoU"/>
+                            </items>
+                        </group>
+                        <label width="140" height="71.5" alignment="center" text="Label" numberOfLines="0" id="lra-YV-9ZN">
+                            <variation key="device=watch38mm" width="120"/>
+                            <variation key="device=watch42mm" width="140"/>
+                        </label>
+                        <group width="1" alignment="left" verticalAlignment="bottom" hasDetent="YES" id="smi-32-Jsk">
+                            <items>
+                                <button width="0.5" alignment="right" title="Complete" id="1QK-0a-GP8">
+                                    <color key="titleColor" red="0.71663671731948853" green="0.91973352432250977" blue="0.50484579801559448" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="font" type="system" pointSize="11"/>
+                                    <connections>
+                                        <action selector="markTaskAsCompleted" destination="gdf-ec-U0h" id="ofL-tB-Iae"/>
+                                    </connections>
+                                </button>
+                                <button width="0.5" alignment="left" title="..." id="x8C-Qd-hAp">
+                                    <fontDescription key="font" type="system" pointSize="11"/>
+                                    <connections>
+                                        <action selector="changeStatusButtonTap" destination="gdf-ec-U0h" id="HNs-ex-J4L"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
                     <connections>
+                        <outlet property="taskDate" destination="UuB-h1-YoU" id="hzV-Wj-T1q"/>
+                        <outlet property="taskIconImageView" destination="G7a-Sg-6Au" id="hCN-H0-MhS"/>
+                        <outlet property="taskNameLabel" destination="lra-YV-9ZN" id="O9r-BK-X36"/>
                         <segue destination="Xds-ir-4eY" kind="relationship" relationship="nextPage" id="HS3-9J-rWJ"/>
                     </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="459" y="305"/>
         </scene>
-        <!--Interface Controller-->
+        <!--Third Page Controller-->
         <scene sceneID="LlC-8i-ueg">
             <objects>
-                <controller id="Xds-ir-4eY">
+                <controller id="Xds-ir-4eY" customClass="ThirdPageController">
+                    <items>
+                        <group width="1" alignment="left" hasDetent="YES" id="fHg-4I-leQ">
+                            <items>
+                                <imageView width="30" height="30" alignment="left" image="default" id="AYk-6l-GUd"/>
+                                <label width="100.5" height="30" alignment="left" text="Date" textAlignment="left" id="VbN-Gs-uVm"/>
+                            </items>
+                        </group>
+                        <label width="140" height="71.5" alignment="center" text="Label" numberOfLines="0" id="eI0-YE-XAb">
+                            <variation key="device=watch38mm" width="120"/>
+                            <variation key="device=watch42mm" width="140"/>
+                        </label>
+                        <group width="1" alignment="left" verticalAlignment="bottom" hasDetent="YES" id="jpF-lr-8LD">
+                            <items>
+                                <button width="0.5" alignment="right" title="Complete" id="8ix-3z-676">
+                                    <color key="titleColor" red="0.71663671731948853" green="0.91973352432250977" blue="0.50484579801559448" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="font" type="system" pointSize="11"/>
+                                    <connections>
+                                        <action selector="markTaskAsCompleted" destination="Xds-ir-4eY" id="F22-CE-Pag"/>
+                                    </connections>
+                                </button>
+                                <button width="0.5" alignment="left" title="..." id="6jw-WI-teZ">
+                                    <fontDescription key="font" type="system" pointSize="11"/>
+                                    <connections>
+                                        <action selector="changeStatusButtonTap" destination="Xds-ir-4eY" id="cME-H4-JBW"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
                     <connections>
+                        <outlet property="taskDate" destination="VbN-Gs-uVm" id="Wkm-vf-KUR"/>
+                        <outlet property="taskIconImageView" destination="AYk-6l-GUd" id="1uT-j9-RJl"/>
+                        <outlet property="taskNameLabel" destination="eI0-YE-XAb" id="eo4-F8-Iq6"/>
                         <segue destination="pH7-Zs-l1t" kind="relationship" relationship="nextPage" id="duY-L7-2B2"/>
                     </connections>
                 </controller>
@@ -185,6 +254,11 @@
                         <label alignment="left" id="9lT-3V-zjI"/>
                     </items>
                     <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="14"/>
+                    <connections>
+                        <outlet property="dateLabel" destination="kIf-al-Ex6" id="xCB-3a-e9W"/>
+                        <outlet property="logoImageView" destination="Y08-mb-JlO" id="C4k-Id-LhS"/>
+                        <outlet property="taskNameLabel" destination="t0P-9Q-dhp" id="DyK-0v-b8R"/>
+                    </connections>
                 </glanceController>
             </objects>
             <point key="canvasLocation" x="235" y="672"/>

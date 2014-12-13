@@ -1,18 +1,19 @@
 //
-//  GlanceController.m
-//  RedKitt WatchKit Extension
+//  ThirdPageController.m
+//  RedKitt
 //
 //  Created by Pol Quintana on 13/12/14.
 //  Copyright (c) 2014 Pol Quintana. All rights reserved.
 //
 
-#import "GlanceController.h"
+#import "ThirdPageController.h"
 
 
-@interface GlanceController()
-@property (weak, nonatomic) IBOutlet WKInterfaceImage *logoImageView;
-@property (weak, nonatomic) IBOutlet WKInterfaceLabel *dateLabel;
+@interface ThirdPageController()
+
+@property (weak, nonatomic) IBOutlet WKInterfaceImage *taskIconImageView;
 @property (weak, nonatomic) IBOutlet WKInterfaceLabel *taskNameLabel;
+@property (weak, nonatomic) IBOutlet WKInterfaceLabel *taskDate;
 
 #warning Complete!!
 //@property (nonatomic, strong) TaskObject *task;
@@ -20,11 +21,11 @@
 @end
 
 
-@implementation GlanceController
+@implementation ThirdPageController
 
 - (void)awakeWithContext:(id)context {
     [super awakeWithContext:context];
-
+    
     // Configure interface objects here.
     NSLog(@"%@ awakeWithContext", self);
 }
@@ -32,6 +33,8 @@
 - (void)willActivate {
     // This method is called when watch view controller is about to be visible to user
     NSLog(@"%@ will activate", self);
+    
+    [self populateScreen];
 }
 
 - (void)didDeactivate {
@@ -39,18 +42,36 @@
     NSLog(@"%@ did deactivate", self);
 }
 
+
+#pragma mark - Prepare View Items
+
 - (void)populateScreen {
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     formatter.dateFormat = @" dd MMM";
-    
+
 #warning Ale method to get the task
     //self.task = METODO ALESANDRO PARA SACAR EL OBJETO TASK
     
 #warning Change @"taskName" with self.task.name and [NSDate date] with self.task.date
     
     self.taskNameLabel.text = @"taskName";
-    self.dateLabel.text = [[formatter stringFromDate:[NSDate date]] uppercaseString];
+    self.taskDate.text = [[formatter stringFromDate:[NSDate date]] uppercaseString];
 }
+
+#pragma mark - Buttons
+
+- (IBAction)markTaskAsCompleted {
+    
+}
+
+- (IBAction)changeStatusButtonTap {
+    //Passar el self.task como context
+#warning Complete!!
+    
+    
+    [self presentControllerWithName:@"ChangeStatus" context:nil];
+}
+
 
 @end
 
