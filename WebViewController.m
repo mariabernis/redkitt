@@ -8,15 +8,22 @@
 
 #import "WebViewController.h"
 
-@interface WebViewController ()
+@interface WebViewController ()<UIWebViewDelegate>
 
+@property (weak, nonatomic) IBOutlet UIWebView *webView;
 @end
 
 @implementation WebViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    self.webView.delegate = self;
+    
+    if (self.initalURL) {
+        NSURLRequest *request = [NSURLRequest requestWithURL:self.initalURL];
+        [self.webView loadRequest:request];
+    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,14 +31,26 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+#pragma mark - UIWebViewDelegate
+- (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
+    
+    if (self.delegate && [self.delegate respondsToSelector:@selector(webViewController:shouldStartLoadWithRequest:navigationType:)]) {
+        
+        return [self.delegate webViewController:self shouldStartLoadWithRequest:request navigationType:navigationType];
+    }
+    // Auth logic here
+//    if ([request.URL.host isEqual:self.callBackURLHost]) {
+//        
+//        // Grab code from url.
+//        NSString *urlStr = request.URL.absoluteString;
+//        NSRange codeMatch = [urlStr rangeOfString:@"?code="];
+//        NSString *code = [urlStr substringFromIndex:codeMatch.location + codeMatch.length];
+//        NSLog(@"🐼 Got code %@", code);
+//        
+//        return NO;
+//    }
+    
+    return YES;
 }
-*/
 
 @end
