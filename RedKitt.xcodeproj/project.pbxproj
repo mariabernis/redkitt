@@ -13,6 +13,10 @@
 		833E11101A3C710A003FB6B0 /* UIButton+RedKitt.m in Sources */ = {isa = PBXBuildFile; fileRef = 833E110A1A3C710A003FB6B0 /* UIButton+RedKitt.m */; };
 		833E11111A3C710A003FB6B0 /* UIColor+RedKitt.m in Sources */ = {isa = PBXBuildFile; fileRef = 833E110C1A3C710A003FB6B0 /* UIColor+RedKitt.m */; };
 		833E11121A3C710A003FB6B0 /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 833E110E1A3C710A003FB6B0 /* UIImage+Color.m */; };
+		833E111C1A3C9A33003FB6B0 /* RedKittProject.m in Sources */ = {isa = PBXBuildFile; fileRef = 833E11151A3C9A33003FB6B0 /* RedKittProject.m */; };
+		833E111D1A3C9A33003FB6B0 /* RedKittProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 833E11171A3C9A33003FB6B0 /* RedKittProvider.m */; };
+		833E111E1A3C9A33003FB6B0 /* RedKittTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 833E11191A3C9A33003FB6B0 /* RedKittTask.m */; };
+		833E111F1A3C9A33003FB6B0 /* RedKittTaskParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 833E111B1A3C9A33003FB6B0 /* RedKittTaskParser.m */; };
 		BCEBE892A4ABA28E3B000C2B /* libPods-RedKitt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BBB9A221A2E343D7BBDBD4D1 /* libPods-RedKitt.a */; };
 		C1784A871A3C5BEE0034DE48 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C1784A861A3C5BEE0034DE48 /* main.m */; };
 		C1784A8A1A3C5BEE0034DE48 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C1784A891A3C5BEE0034DE48 /* AppDelegate.m */; };
@@ -84,6 +88,14 @@
 		833E110C1A3C710A003FB6B0 /* UIColor+RedKitt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+RedKitt.m"; sourceTree = "<group>"; };
 		833E110D1A3C710A003FB6B0 /* UIImage+Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Color.h"; sourceTree = "<group>"; };
 		833E110E1A3C710A003FB6B0 /* UIImage+Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Color.m"; sourceTree = "<group>"; };
+		833E11141A3C9A33003FB6B0 /* RedKittProject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedKittProject.h; sourceTree = "<group>"; };
+		833E11151A3C9A33003FB6B0 /* RedKittProject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedKittProject.m; sourceTree = "<group>"; };
+		833E11161A3C9A33003FB6B0 /* RedKittProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedKittProvider.h; sourceTree = "<group>"; };
+		833E11171A3C9A33003FB6B0 /* RedKittProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedKittProvider.m; sourceTree = "<group>"; };
+		833E11181A3C9A33003FB6B0 /* RedKittTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedKittTask.h; sourceTree = "<group>"; };
+		833E11191A3C9A33003FB6B0 /* RedKittTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedKittTask.m; sourceTree = "<group>"; };
+		833E111A1A3C9A33003FB6B0 /* RedKittTaskParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedKittTaskParser.h; sourceTree = "<group>"; };
+		833E111B1A3C9A33003FB6B0 /* RedKittTaskParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedKittTaskParser.m; sourceTree = "<group>"; };
 		A549F2B7018F17AB800F26AC /* libPods-RedKittTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RedKittTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBB9A221A2E343D7BBDBD4D1 /* libPods-RedKitt.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RedKitt.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1784A811A3C5BEE0034DE48 /* RedKitt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RedKitt.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -169,6 +181,21 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		833E11131A3C9A33003FB6B0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				833E11141A3C9A33003FB6B0 /* RedKittProject.h */,
+				833E11151A3C9A33003FB6B0 /* RedKittProject.m */,
+				833E11161A3C9A33003FB6B0 /* RedKittProvider.h */,
+				833E11171A3C9A33003FB6B0 /* RedKittProvider.m */,
+				833E11181A3C9A33003FB6B0 /* RedKittTask.h */,
+				833E11191A3C9A33003FB6B0 /* RedKittTask.m */,
+				833E111A1A3C9A33003FB6B0 /* RedKittTaskParser.h */,
+				833E111B1A3C9A33003FB6B0 /* RedKittTaskParser.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		8BF888915FD8B06F99B7B9C1 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -209,6 +236,7 @@
 			children = (
 				C1784A881A3C5BEE0034DE48 /* AppDelegate.h */,
 				C1784A891A3C5BEE0034DE48 /* AppDelegate.m */,
+				833E11131A3C9A33003FB6B0 /* Models */,
 				833E11021A3C6E3E003FB6B0 /* Services */,
 				C1784AAB1A3C5CC50034DE48 /* Controller */,
 				833E11061A3C710A003FB6B0 /* Utils */,
@@ -550,10 +578,14 @@
 				833E11111A3C710A003FB6B0 /* UIColor+RedKitt.m in Sources */,
 				C1784A8A1A3C5BEE0034DE48 /* AppDelegate.m in Sources */,
 				C1784A871A3C5BEE0034DE48 /* main.m in Sources */,
+				833E111F1A3C9A33003FB6B0 /* RedKittTaskParser.m in Sources */,
 				C1784AB11A3C5CF90034DE48 /* WebViewController.m in Sources */,
+				833E111E1A3C9A33003FB6B0 /* RedKittTask.m in Sources */,
+				833E111D1A3C9A33003FB6B0 /* RedKittProvider.m in Sources */,
 				833E11121A3C710A003FB6B0 /* UIImage+Color.m in Sources */,
 				833E11101A3C710A003FB6B0 /* UIButton+RedKitt.m in Sources */,
 				833E110F1A3C710A003FB6B0 /* MBCheck.m in Sources */,
+				833E111C1A3C9A33003FB6B0 /* RedKittProject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
