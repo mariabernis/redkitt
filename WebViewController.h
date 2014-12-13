@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  WebViewController.h
 //  RedKitt
 //
 //  Created by Pol Quintana on 13/12/14.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface WebViewController : UIViewController
 
 @end
-
