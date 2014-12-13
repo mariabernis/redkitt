@@ -13,7 +13,7 @@
                         <group width="1" alignment="left" hasDetent="YES" id="7JE-4H-Bzi">
                             <items>
                                 <imageView width="30" height="30" alignment="left" image="default" id="f9z-QI-8Qj"/>
-                                <label width="100.5" height="30" alignment="left" text="Label" textAlignment="left" id="GWl-Do-Ruh"/>
+                                <label width="100.5" height="30" alignment="left" text="Title" textAlignment="left" id="GWl-Do-Ruh"/>
                             </items>
                         </group>
                         <label alignment="left" text="Label" id="leD-DO-gP8"/>
@@ -21,6 +21,7 @@
                         <group width="1" alignment="left" verticalAlignment="bottom" hasDetent="YES" id="U7p-9X-TAY">
                             <items>
                                 <button width="0.5" alignment="left" title="Complete" id="l4W-xd-D3I">
+                                    <color key="backgroundColor" red="0.36275380849838257" green="0.69353151321411133" blue="0.33955079317092896" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <fontDescription key="font" type="system" pointSize="11"/>
                                 </button>
                                 <button width="0.5" alignment="right" title="..." id="14b-Gh-6nj">
@@ -76,9 +77,36 @@
         <!--Interface Controller-->
         <scene sceneID="LlC-8i-ueg">
             <objects>
-                <controller id="Xds-ir-4eY"/>
+                <controller id="Xds-ir-4eY">
+                    <connections>
+                        <segue destination="pH7-Zs-l1t" kind="relationship" relationship="nextPage" id="duY-L7-2B2"/>
+                    </connections>
+                </controller>
             </objects>
             <point key="canvasLocation" x="671" y="305"/>
+        </scene>
+        <!--Add Task Interface Controller-->
+        <scene sceneID="tz0-dC-KWM">
+            <objects>
+                <controller id="pH7-Zs-l1t" customClass="AddTaskInterfaceController">
+                    <items>
+                        <button width="100" height="100" alignment="center" verticalAlignment="center" backgroundImage="add" id="r1C-js-3HH">
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <segue destination="qFp-tj-Cdl" kind="modal" id="ZGp-li-Zl0"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="889" y="305"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="deK-cB-HLG">
+            <objects>
+                <controller id="qFp-tj-Cdl"/>
+            </objects>
+            <point key="canvasLocation" x="889" y="612"/>
         </scene>
         <!--Glance Interface Controller-->
         <scene sceneID="BOz-TT-tkC">
