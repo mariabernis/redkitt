@@ -7,11 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "RedKittProject.h"
+//#import "RedKittProject.h"
 
 @interface RedKittProvider : NSObject
 #pragma mark - Fetching
-- (void)fetchRBRedKittWithProject:(RedKittProject *)project
-                      completion:(void(^)(NSArray *radars, NSError *error))completion;
-- (void)fetchLastRBRedKittWithProject:(RedKittProject *)project isUrgent:(BOOL)urgent withLimit:(NSInteger)limit completion:(void(^)(NSArray *redKittTasks, NSError *error))completion;
+- (void)fetchRedKittTasksWithCompletion:(void(^)(NSArray *tasks, NSError *error))completion;
+- (void)fetchLastRedKittWithLimit:(NSInteger)limit isUrgent:(BOOL)urgent completion:(void(^)(NSArray *redKittTasks, NSError *error))completion;
 @end

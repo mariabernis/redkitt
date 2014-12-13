@@ -12,7 +12,7 @@
 @property (nonatomic, assign) NSInteger redKittProjectId;
 @property (nonatomic, assign) NSInteger redKittTaskListId;
 
-+ (RedKittProject *)importedProject;
-+ (BOOL)saveImportedProject:(RedKittProject *)project;
+//+ (RedKittProject *)importedProject;
+//+ (BOOL)saveImportedProject:(RedKittProject *)project;
 
 @end

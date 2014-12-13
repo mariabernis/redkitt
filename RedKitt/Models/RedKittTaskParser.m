@@ -7,6 +7,8 @@
 //
 
 #import "RedKittTaskParser.h"
+
+
 #define MATCH_STR @"date://"
 #define DATE_FORMAT @"dd-MM-yyyy"
 #define TASK_ID @"id"
@@ -24,12 +26,12 @@
 
 + (NSArray *)redKittLastTasksWithRBArray:(NSArray *)array urgent:(BOOL)isUrgent withSize:(NSInteger)limit
 {
-    NSDateComponents *today = [[NSCalendar currentCalendar] components:NSEraCalendarUnit|NSYearCalendarUnit|NSMonthCalendarUnit|NSDayCalendarUnit fromDate:[NSDate date]];
+    NSDateComponents *today = [[NSCalendar currentCalendar] components:NSCalendarUnitEra|NSCalendarUnitYear|NSCalendarUnitMonth|NSCalendarUnitDay fromDate:[NSDate date]];
     
     NSMutableArray *items = [[NSMutableArray alloc] init];
     [array enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
         RedKittTask *item = [self redKittTaskWithRBInfo:(NSDictionary *)obj];
-        if (isUrgent && item.taskUrgent || !isUrgent) {
+        if ((isUrgent && item.taskUrgent) || !isUrgent) {
             if ([self task:item isForDate:today]) {
                 [items addObject:item];
             }
@@ -61,7 +63,7 @@ NSInteger Sort_Items_Comparer(id id1, id id2, void *context)
     NSMutableArray *items = [[NSMutableArray alloc] init];
     [array enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
         RedKittTask *item = [self redKittTaskWithRBInfo:(NSDictionary *)obj];
-        if (isUrgent && item.taskUrgent || !isUrgent) {
+        if ((isUrgent && item.taskUrgent) || !isUrgent) {
             [items addObject:item];
         }
     }];
@@ -79,40 +81,48 @@ NSInteger Sort_Items_Comparer(id id1, id id2, void *context)
         [items addObject:item];
     }];
     
-    NSArray *sortedList = [items sortedArrayUsingFunction:Sort_Items_Comparer context:(__bridge void *)(self)];
+//    NSArray *sortedList = [items sortedArrayUsingFunction:Sort_Items_Comparer context:(__bridge void *)(self)];
     
-    return [NSArray arrayWithArray:sortedList];
+    return items;
 }
 
 + (RedKittTask *)redKittTaskWithRBInfo:(NSDictionary *)info
 {
-    RedKittTask *item = [[RadarTask alloc] init];
+    RedKittTask *item = [[RedKittTask alloc] init];
     item.taskId = [[info objectForKey:TASK_ID] integerValue];
     item.taskTitle = [info objectForKey:TASK_NAME];
     item.taskDescription = [info objectForKey:TASK_DESCRIPTION];
     item.taskStatus = [info objectForKey:TASK_STATUS];
-    item.taskUrgent = [info objectForKey:TASK_URGENT];
+    item.taskUrgent = [[info objectForKey:TASK_URGENT] boolValue];
     //item.taskDate = [self retrieveDateFromDescription:item.radarDescription];
     item.taskDate = [info objectForKey:TASK_DATE];
     return item;
 }
 
-+ (NSDate *)retrieveDateFromDescription:(NSString *)description
+//+ (NSDate *)retrieveDateFromDescription:(NSString *)description
+//{
+//    NSRange matchDate = [description rangeOfString:MATCH_STR];
+//    if (matchDate.length == NSNotFound) {
+//        return nil;
+//    }
+//    NSString *rdar = [description substringToIndex:matchDate.length + 8];
+//    NSString *dateString = [rdar substringFromIndex:matchDate.length];
+//    
+//    //NSString *dateString = @"01-02-2010";
+//    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+//    [dateFormatter setDateFormat:DATE_FORMAT];
+//    NSDate *dateFromString = [[NSDate alloc] init];
+//    dateFromString = [dateFormatter dateFromString:dateString];
+//    
+//    return num;
+//}
+
++ (NSDictionary *)rbGETTasksParameters
 {
-    NSRange matchDate = [description rangeOfString:MATCH_STR];
-    if (matchDate.length == NSNotFound) {
-        return nil;
-    }
-    NSString *rdar = [description substringToIndex:matchDate.length + 8];
-    NSString *dateString = [rdar substringFromIndex:matchDate.length];
-    
-    //NSString *dateString = @"01-02-2010";
-    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    [dateFormatter setDateFormat:DATE_FORMAT];
-    NSDate *dateFromString = [[NSDate alloc] init];
-    dateFromString = [dateFormatter dateFromString:dateString];
-    
-    return num;
+    // Add per_page to max value, otherwise it will page at 30.
+    NSDictionary *taskParams = @{ @"per_page"    :@1000
+                                  };
+    return taskParams;
 }
 
 + (NSDictionary *)rbGETTasksParametersWithProject:(RedKittProject *)project
@@ -130,7 +140,7 @@ NSInteger Sort_Items_Comparer(id id1, id id2, void *context)
     // Here we check if the task date is today
     
     BOOL res = false;
-    NSDateComponents *taskDate = [[NSCalendar currentCalendar] components:NSEraCalendarUnit|NSYearCalendarUnit|NSMonthCalendarUnit|NSDayCalendarUnit fromDate:item.taskDate];
+    NSDateComponents *taskDate = [[NSCalendar currentCalendar] components:NSCalendarUnitEra|NSCalendarUnitYear|NSCalendarUnitMonth|NSCalendarUnitDay fromDate:item.taskDate];
     
     if([today day] == [taskDate day] &&
        [today month] == [taskDate month] &&

@@ -14,5 +14,5 @@
 @property (nonatomic, strong) NSString *taskTitle;
 @property (nonatomic, strong) NSString *taskDescription;
 @property (nonatomic, strong) NSString *taskStatus;
-@property BOOL *taskUrgent;
+@property (nonatomic, assign) BOOL taskUrgent;
 @end

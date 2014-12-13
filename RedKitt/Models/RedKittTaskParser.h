@@ -18,6 +18,7 @@
 + (NSArray *)redKittTasksWithRBArray:(NSArray *)array urgent:(BOOL)isUrgent;
 + (NSArray *)redKittLastTasksWithRBArray:(NSArray *)array urgent:(BOOL)isUrgent withSize:(NSInteger)limit;
 + (RedKittTask *)redKittTaskWithRBInfo:(NSDictionary *)info;
-+ (NSDate *)retrieveDateFromDescription:(NSString *)description;
-+ (NSDictionary *)rbGETTasksParametersWithProject:(RedKittProject *)project;
+//+ (NSDate *)retrieveDateFromDescription:(NSString *)description;
++ (NSDictionary *)rbGETTasksParameters;
+//+ (NSDictionary *)rbGETTasksParametersWithProject:(RedKittProject *)project;
 @end
