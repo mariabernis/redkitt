@@ -12,23 +12,55 @@
                     <items>
                         <group width="1" alignment="left" hasDetent="YES" id="7JE-4H-Bzi">
                             <items>
-                                <imageView width="30" height="30" alignment="left" id="f9z-QI-8Qj"/>
+                                <imageView width="30" height="30" alignment="left" image="default" id="f9z-QI-8Qj"/>
                                 <label width="100.5" height="30" alignment="left" text="Label" textAlignment="left" id="GWl-Do-Ruh"/>
                             </items>
                         </group>
                         <label alignment="left" text="Label" id="leD-DO-gP8"/>
-                        <dateLabel alignment="left" id="o8O-VR-7Zx">
-                            <dateFormatterStyle key="dateStyle" none="YES" short="YES"/>
-                            <dateFormatterStyle key="timeStyle" none="YES" short="YES"/>
-                        </dateLabel>
-                        <button width="1" alignment="left" verticalAlignment="bottom" title="Change" id="fnl-wX-XNs"/>
+                        <label alignment="left" text="Label" id="V6v-aG-cPi"/>
+                        <group width="1" alignment="left" verticalAlignment="bottom" hasDetent="YES" id="U7p-9X-TAY">
+                            <items>
+                                <button width="0.5" alignment="left" title="Complete" id="l4W-xd-D3I">
+                                    <fontDescription key="font" type="system" pointSize="11"/>
+                                </button>
+                                <button width="0.5" alignment="right" title="..." id="14b-Gh-6nj">
+                                    <fontDescription key="font" type="system" pointSize="11"/>
+                                    <connections>
+                                        <segue destination="LaQ-AY-gKs" kind="modal" id="LKP-N4-Q96"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
                     </items>
                     <connections>
+                        <outlet property="taskDate" destination="V6v-aG-cPi" id="Llg-ge-qfe"/>
+                        <outlet property="taskIconImageView" destination="f9z-QI-8Qj" id="fn5-GV-3Hd"/>
+                        <outlet property="taskNameLabel" destination="leD-DO-gP8" id="Xxh-u4-ms2"/>
+                        <outlet property="taskTitleLabel" destination="GWl-Do-Ruh" id="eta-fZ-RWY"/>
                         <segue destination="gdf-ec-U0h" kind="relationship" relationship="nextPage" id="i5H-H0-uGa"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="234" y="346"/>
+            <point key="canvasLocation" x="240" y="305"/>
+        </scene>
+        <!--Back-->
+        <scene sceneID="gNF-iO-spq">
+            <objects>
+                <controller title="Back" id="LaQ-AY-gKs">
+                    <items>
+                        <group width="1" alignment="left" hasDetent="YES" id="E19-4c-aot">
+                            <items>
+                                <imageView width="30" height="30" alignment="left" image="default" id="QDo-qh-oPd"/>
+                                <label width="100.5" height="30" alignment="left" text="Label" textAlignment="left" id="w1G-ES-mNh"/>
+                            </items>
+                        </group>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Complete" id="Fsb-E7-9kx"/>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Hold" id="QaN-ak-5eh"/>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Reject" id="xBX-DT-4ka"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="459" y="0.75"/>
         </scene>
         <!--Interface Controller-->
         <scene sceneID="PmW-f9-L8q">
@@ -39,14 +71,14 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="453.33333333333337" y="346.53846153846155"/>
+            <point key="canvasLocation" x="459" y="305"/>
         </scene>
         <!--Interface Controller-->
         <scene sceneID="LlC-8i-ueg">
             <objects>
                 <controller id="Xds-ir-4eY"/>
             </objects>
-            <point key="canvasLocation" x="665.17948717948718" y="346.53846153846155"/>
+            <point key="canvasLocation" x="671" y="305"/>
         </scene>
         <!--Glance Interface Controller-->
         <scene sceneID="BOz-TT-tkC">

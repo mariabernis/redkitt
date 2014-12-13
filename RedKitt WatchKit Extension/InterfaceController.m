@@ -10,6 +10,10 @@
 
 
 @interface InterfaceController()
+@property (weak, nonatomic) IBOutlet WKInterfaceImage *taskIconImageView;
+@property (weak, nonatomic) IBOutlet WKInterfaceLabel *taskTitleLabel;
+@property (weak, nonatomic) IBOutlet WKInterfaceLabel *taskNameLabel;
+@property (weak, nonatomic) IBOutlet WKInterfaceLabel *taskDate;
 
 @end
 
@@ -18,6 +22,8 @@
 
 - (void)awakeWithContext:(id)context {
     [super awakeWithContext:context];
+    
+    [self populateScreen];
 
     // Configure interface objects here.
     NSLog(@"%@ awakeWithContext", self);
@@ -31,6 +37,18 @@
 - (void)didDeactivate {
     // This method is called when watch view controller is no longer visible
     NSLog(@"%@ did deactivate", self);
+}
+
+
+#pragma mark - Prepare View Items
+
+- (void)populateScreen {
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    formatter.dateFormat = @"dd MMM - HH:mm";
+    
+    self.taskTitleLabel.text = @"taskTitle";
+    self.taskNameLabel.text = @"taskName";
+    self.taskDate.text = [formatter stringFromDate:[NSDate date]];
 }
 
 @end
