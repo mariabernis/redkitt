@@ -8,6 +8,20 @@
 
 #import <UIKit/UIKit.h>
 
+
+@class WebViewController;
+@protocol WebViewControllerDelegate <NSObject>
+@required
+
+@optional
+- (BOOL)webViewController:(WebViewController *)webVC shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType;
+
+@end
+
 @interface WebViewController : UIViewController
+
+@property (nonatomic, weak) id<WebViewControllerDelegate>delegate;
+@property (nonatomic, strong) NSURL *initalURL;
+@property (nonatomic, strong) NSString *callBackURLHost;
 
 @end
