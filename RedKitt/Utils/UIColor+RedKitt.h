@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIColor (TrackMyRadars)
+@interface UIColor (RedKitt)
 
 + (UIColor *)redboothColor;
 + (UIColor *)redboothColorDarken;

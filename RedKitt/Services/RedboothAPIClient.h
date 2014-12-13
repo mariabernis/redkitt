@@ -27,6 +27,8 @@ typedef void (^RedboothRequestCompletion)(id responseObject, NSError *error);
 
 #pragma mark - Authentication
 - (void)launchAuthorizationFlow;
+- (NSURL *)authorizationURL;
+- (NSURL *)callbackURL;
 - (void)authoriseWithCode:(NSString *)code completion:(void(^)(NSError *error))completion;
 
 @end

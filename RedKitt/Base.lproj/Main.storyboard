@@ -49,6 +49,9 @@
                             <constraint firstItem="Lkc-TD-jpu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="gnc-UJ-kJC"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="loginButton" destination="Lkc-TD-jpu" id="nVN-uZ-LkL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -57,7 +60,7 @@
         <!--Web View Controller-->
         <scene sceneID="D1a-Ds-TCb">
             <objects>
-                <viewController id="EGu-K9-cDF" customClass="WebViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WebViewScene" id="EGu-K9-cDF" customClass="WebViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hjC-1M-Dhv"/>
                         <viewControllerLayoutGuide type="bottom" id="CTc-uV-K79"/>
@@ -79,6 +82,9 @@
                             <constraint firstItem="uWi-fJ-RgT" firstAttribute="top" secondItem="v7c-t5-wMI" secondAttribute="top" id="xsA-WR-XKN"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="webView" destination="uWi-fJ-RgT" id="YzG-05-0IP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h8Y-oF-2Tr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

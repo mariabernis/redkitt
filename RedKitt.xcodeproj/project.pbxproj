@@ -10,8 +10,8 @@
 		759F27179F68CC0EFC61F68D /* libPods-RedKittTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A549F2B7018F17AB800F26AC /* libPods-RedKittTests.a */; };
 		833E11051A3C6E3E003FB6B0 /* RedboothAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 833E11041A3C6E3E003FB6B0 /* RedboothAPIClient.m */; };
 		833E110F1A3C710A003FB6B0 /* MBCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = 833E11081A3C710A003FB6B0 /* MBCheck.m */; };
-		833E11101A3C710A003FB6B0 /* UIButton+TrackMyRadars.m in Sources */ = {isa = PBXBuildFile; fileRef = 833E110A1A3C710A003FB6B0 /* UIButton+TrackMyRadars.m */; };
-		833E11111A3C710A003FB6B0 /* UIColor+TrackMyRadars.m in Sources */ = {isa = PBXBuildFile; fileRef = 833E110C1A3C710A003FB6B0 /* UIColor+TrackMyRadars.m */; };
+		833E11101A3C710A003FB6B0 /* UIButton+RedKitt.m in Sources */ = {isa = PBXBuildFile; fileRef = 833E110A1A3C710A003FB6B0 /* UIButton+RedKitt.m */; };
+		833E11111A3C710A003FB6B0 /* UIColor+RedKitt.m in Sources */ = {isa = PBXBuildFile; fileRef = 833E110C1A3C710A003FB6B0 /* UIColor+RedKitt.m */; };
 		833E11121A3C710A003FB6B0 /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 833E110E1A3C710A003FB6B0 /* UIImage+Color.m */; };
 		BCEBE892A4ABA28E3B000C2B /* libPods-RedKitt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BBB9A221A2E343D7BBDBD4D1 /* libPods-RedKitt.a */; };
 		C1784A871A3C5BEE0034DE48 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C1784A861A3C5BEE0034DE48 /* main.m */; };
@@ -78,10 +78,10 @@
 		833E11041A3C6E3E003FB6B0 /* RedboothAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedboothAPIClient.m; sourceTree = "<group>"; };
 		833E11071A3C710A003FB6B0 /* MBCheck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBCheck.h; sourceTree = "<group>"; };
 		833E11081A3C710A003FB6B0 /* MBCheck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBCheck.m; sourceTree = "<group>"; };
-		833E11091A3C710A003FB6B0 /* UIButton+TrackMyRadars.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+TrackMyRadars.h"; sourceTree = "<group>"; };
-		833E110A1A3C710A003FB6B0 /* UIButton+TrackMyRadars.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+TrackMyRadars.m"; sourceTree = "<group>"; };
-		833E110B1A3C710A003FB6B0 /* UIColor+TrackMyRadars.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+TrackMyRadars.h"; sourceTree = "<group>"; };
-		833E110C1A3C710A003FB6B0 /* UIColor+TrackMyRadars.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+TrackMyRadars.m"; sourceTree = "<group>"; };
+		833E11091A3C710A003FB6B0 /* UIButton+RedKitt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+RedKitt.h"; sourceTree = "<group>"; };
+		833E110A1A3C710A003FB6B0 /* UIButton+RedKitt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+RedKitt.m"; sourceTree = "<group>"; };
+		833E110B1A3C710A003FB6B0 /* UIColor+RedKitt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+RedKitt.h"; sourceTree = "<group>"; };
+		833E110C1A3C710A003FB6B0 /* UIColor+RedKitt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+RedKitt.m"; sourceTree = "<group>"; };
 		833E110D1A3C710A003FB6B0 /* UIImage+Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Color.h"; sourceTree = "<group>"; };
 		833E110E1A3C710A003FB6B0 /* UIImage+Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Color.m"; sourceTree = "<group>"; };
 		A549F2B7018F17AB800F26AC /* libPods-RedKittTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RedKittTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -159,10 +159,10 @@
 			children = (
 				833E11071A3C710A003FB6B0 /* MBCheck.h */,
 				833E11081A3C710A003FB6B0 /* MBCheck.m */,
-				833E11091A3C710A003FB6B0 /* UIButton+TrackMyRadars.h */,
-				833E110A1A3C710A003FB6B0 /* UIButton+TrackMyRadars.m */,
-				833E110B1A3C710A003FB6B0 /* UIColor+TrackMyRadars.h */,
-				833E110C1A3C710A003FB6B0 /* UIColor+TrackMyRadars.m */,
+				833E11091A3C710A003FB6B0 /* UIButton+RedKitt.h */,
+				833E110A1A3C710A003FB6B0 /* UIButton+RedKitt.m */,
+				833E110B1A3C710A003FB6B0 /* UIColor+RedKitt.h */,
+				833E110C1A3C710A003FB6B0 /* UIColor+RedKitt.m */,
 				833E110D1A3C710A003FB6B0 /* UIImage+Color.h */,
 				833E110E1A3C710A003FB6B0 /* UIImage+Color.m */,
 			);
@@ -547,12 +547,12 @@
 			files = (
 				833E11051A3C6E3E003FB6B0 /* RedboothAPIClient.m in Sources */,
 				C1784AAE1A3C5CF00034DE48 /* StartViewController.m in Sources */,
-				833E11111A3C710A003FB6B0 /* UIColor+TrackMyRadars.m in Sources */,
+				833E11111A3C710A003FB6B0 /* UIColor+RedKitt.m in Sources */,
 				C1784A8A1A3C5BEE0034DE48 /* AppDelegate.m in Sources */,
 				C1784A871A3C5BEE0034DE48 /* main.m in Sources */,
 				C1784AB11A3C5CF90034DE48 /* WebViewController.m in Sources */,
 				833E11121A3C710A003FB6B0 /* UIImage+Color.m in Sources */,
-				833E11101A3C710A003FB6B0 /* UIButton+TrackMyRadars.m in Sources */,
+				833E11101A3C710A003FB6B0 /* UIButton+RedKitt.m in Sources */,
 				833E110F1A3C710A003FB6B0 /* MBCheck.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

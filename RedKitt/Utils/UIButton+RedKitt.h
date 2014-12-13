@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIButton (TrackMyRadars)
+@interface UIButton (RedKitt)
 
 - (void)redboothLoginStyle;
 // Sample method we can implement

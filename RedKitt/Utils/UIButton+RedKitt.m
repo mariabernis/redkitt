@@ -6,11 +6,11 @@
 //  Copyright (c) 2014 mariabernis. All rights reserved.
 //
 
-#import "UIButton+TrackMyRadars.h"
-#import "UIColor+TrackMyRadars.h"
+#import "UIButton+RedKitt.h"
+#import "UIColor+RedKitt.h"
 #import "UIImage+Color.h"
 
-@implementation UIButton (TrackMyRadars)
+@implementation UIButton (RedKitt)
 
 - (void)redboothLoginStyle
 {
@@ -21,6 +21,7 @@
     [self setImage:[UIImage imageNamed:@"ic_redbooth_white_30"] forState:UIControlStateHighlighted];
     [self setBackgroundImage:[UIImage mbc_imageWithColor:[UIColor redboothColor]] forState:UIControlStateNormal];
     [self setBackgroundImage:[UIImage mbc_imageWithColor:[UIColor redboothColorDarken]] forState:UIControlStateHighlighted];
+    [self setBackgroundImage:[UIImage mbc_imageWithColor:[UIColor lightGrayColor]] forState:UIControlStateDisabled];
     [self setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     CGFloat spacing = 10;
     self.imageEdgeInsets = UIEdgeInsetsMake(0, 0, 0, spacing);

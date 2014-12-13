@@ -144,13 +144,26 @@
                                  }];
 }
 
-- (void)launchAuthorizationFlow
-{
+- (void)launchAuthorizationFlow {
     NSString *baseAuthURLStr = @"https://redbooth.com/oauth2/authorize";
     NSString *params = [NSString stringWithFormat:@"client_id=%@&redirect_uri=%@&response_type=code", RB_API_CLIENT, RB_API_CALLBACK_URL];
     NSString *scapedParams = [params stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLHostAllowedCharacterSet]];
     NSString *authURLStr = [NSString stringWithFormat:@"%@?%@", baseAuthURLStr, scapedParams];
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:authURLStr]];
+}
+
+- (NSURL *)authorizationURL {
+    
+    NSString *baseAuthURLStr = @"https://redbooth.com/oauth2/authorize";
+    NSString *params = [NSString stringWithFormat:@"client_id=%@&redirect_uri=%@&response_type=code", RB_API_CLIENT, RB_API_CALLBACK_URL];
+    NSString *scapedParams = [params stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLHostAllowedCharacterSet]];
+    NSString *authURLStr = [NSString stringWithFormat:@"%@?%@", baseAuthURLStr, scapedParams];
+    return [NSURL URLWithString:authURLStr];
+}
+
+- (NSURL *)callbackURL {
+    
+    return [NSURL URLWithString:RB_API_CALLBACK_URL];
 }
 
 - (void)authoriseWithCode:(NSString *)code completion:(void(^)(NSError *error))completion

@@ -6,9 +6,9 @@
 //  Copyright (c) 2014 mariabernis. All rights reserved.
 //
 
-#import "UIColor+TrackMyRadars.h"
+#import "UIColor+RedKitt.h"
 
-@implementation UIColor (TrackMyRadars)
+@implementation UIColor (RedKitt)
 
 + (UIColor *)redboothColor
 {
