@@ -1,1729 +1,861 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>09ADB89C3977FCF1F26B8024</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-RedKitt.release.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-RedKitt/Pods-RedKitt.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0CC4F3D9F84E83F76B09D9E8</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-RedKitt.debug.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-RedKitt/Pods-RedKitt.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>51613CCC3A11A27939E8CB4F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-RedKittTests.release.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-RedKittTests/Pods-RedKittTests.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6F7532C4CB46B42027231270</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-RedKitt/Pods-RedKitt-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>759F27179F68CC0EFC61F68D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A549F2B7018F17AB800F26AC</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>8BF888915FD8B06F99B7B9C1</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>0CC4F3D9F84E83F76B09D9E8</string>
-				<string>09ADB89C3977FCF1F26B8024</string>
-				<string>DB058533139D50527F4880A0</string>
-				<string>51613CCC3A11A27939E8CB4F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>906446413B69BBE5470C19C0</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-RedKittTests/Pods-RedKittTests-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>A549F2B7018F17AB800F26AC</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods-RedKittTests.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>AC9E2D9A3ABB5520B8D0F421</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>B454160FA4EBE2C646F3A9A5</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>BBB9A221A2E343D7BBDBD4D1</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods-RedKitt.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>BCEBE892A4ABA28E3B000C2B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>BBB9A221A2E343D7BBDBD4D1</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C1784A781A3C5BEE0034DE48</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>C1784A831A3C5BEE0034DE48</string>
-				<string>C1784A9D1A3C5BEE0034DE48</string>
-				<string>C1784AB71A3C5D210034DE48</string>
-				<string>C1784ACC1A3C5D210034DE48</string>
-				<string>C1784A821A3C5BEE0034DE48</string>
-				<string>8BF888915FD8B06F99B7B9C1</string>
-				<string>EA3CF6892ECAC279909D3948</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C1784A791A3C5BEE0034DE48</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastUpgradeCheck</key>
-				<string>0620</string>
-				<key>ORGANIZATIONNAME</key>
-				<string>Pol Quintana</string>
-				<key>TargetAttributes</key>
-				<dict>
-					<key>C1784A801A3C5BEE0034DE48</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>6.2</string>
-					</dict>
-					<key>C1784A991A3C5BEE0034DE48</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>6.2</string>
-						<key>TestTargetID</key>
-						<string>C1784A801A3C5BEE0034DE48</string>
-					</dict>
-					<key>C1784AB51A3C5D210034DE48</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>6.2</string>
-					</dict>
-					<key>C1784AC71A3C5D210034DE48</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>6.2</string>
-					</dict>
-				</dict>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>C1784A7C1A3C5BEE0034DE48</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-				<string>Base</string>
-			</array>
-			<key>mainGroup</key>
-			<string>C1784A781A3C5BEE0034DE48</string>
-			<key>productRefGroup</key>
-			<string>C1784A821A3C5BEE0034DE48</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>C1784A801A3C5BEE0034DE48</string>
-				<string>C1784A991A3C5BEE0034DE48</string>
-				<string>C1784AB51A3C5D210034DE48</string>
-				<string>C1784AC71A3C5D210034DE48</string>
-			</array>
-		</dict>
-		<key>C1784A7C1A3C5BEE0034DE48</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>C1784AA21A3C5BEE0034DE48</string>
-				<string>C1784AA31A3C5BEE0034DE48</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>C1784A7D1A3C5BEE0034DE48</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>C1784AAE1A3C5CF00034DE48</string>
-				<string>C1784A8A1A3C5BEE0034DE48</string>
-				<string>C1784A871A3C5BEE0034DE48</string>
-				<string>C1784AB11A3C5CF90034DE48</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>C1784A7E1A3C5BEE0034DE48</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>BCEBE892A4ABA28E3B000C2B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>C1784A7F1A3C5BEE0034DE48</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>C1784A901A3C5BEE0034DE48</string>
-				<string>C1784A951A3C5BEE0034DE48</string>
-				<string>C1784A921A3C5BEE0034DE48</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>C1784A801A3C5BEE0034DE48</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>C1784AA41A3C5BEE0034DE48</string>
-			<key>buildPhases</key>
-			<array>
-				<string>AC9E2D9A3ABB5520B8D0F421</string>
-				<string>C1784A7D1A3C5BEE0034DE48</string>
-				<string>C1784A7E1A3C5BEE0034DE48</string>
-				<string>C1784A7F1A3C5BEE0034DE48</string>
-				<string>C1784ADC1A3C5D210034DE48</string>
-				<string>6F7532C4CB46B42027231270</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>C1784AD41A3C5D210034DE48</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>RedKitt</string>
-			<key>productName</key>
-			<string>RedKitt</string>
-			<key>productReference</key>
-			<string>C1784A811A3C5BEE0034DE48</string>
-			<key>productType</key>
-			<string>com.apple.product-type.application</string>
-		</dict>
-		<key>C1784A811A3C5BEE0034DE48</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.application</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>RedKitt.app</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>C1784A821A3C5BEE0034DE48</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>C1784A811A3C5BEE0034DE48</string>
-				<string>C1784A9A1A3C5BEE0034DE48</string>
-				<string>C1784AB61A3C5D210034DE48</string>
-				<string>C1784AC81A3C5D210034DE48</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C1784A831A3C5BEE0034DE48</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>C1784A881A3C5BEE0034DE48</string>
-				<string>C1784A891A3C5BEE0034DE48</string>
-				<string>C1784AAB1A3C5CC50034DE48</string>
-				<string>C1784AAA1A3C5CBE0034DE48</string>
-				<string>C1784A911A3C5BEE0034DE48</string>
-				<string>C1784A841A3C5BEE0034DE48</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>RedKitt</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C1784A841A3C5BEE0034DE48</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>C1784A851A3C5BEE0034DE48</string>
-				<string>C1784A861A3C5BEE0034DE48</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C1784A851A3C5BEE0034DE48</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C1784A861A3C5BEE0034DE48</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>main.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C1784A871A3C5BEE0034DE48</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C1784A861A3C5BEE0034DE48</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C1784A881A3C5BEE0034DE48</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>AppDelegate.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C1784A891A3C5BEE0034DE48</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>AppDelegate.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C1784A8A1A3C5BEE0034DE48</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C1784A891A3C5BEE0034DE48</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C1784A8E1A3C5BEE0034DE48</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>C1784A8F1A3C5BEE0034DE48</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C1784A8F1A3C5BEE0034DE48</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C1784A901A3C5BEE0034DE48</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C1784A8E1A3C5BEE0034DE48</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C1784A911A3C5BEE0034DE48</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>folder.assetcatalog</string>
-			<key>path</key>
-			<string>Images.xcassets</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C1784A921A3C5BEE0034DE48</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C1784A911A3C5BEE0034DE48</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C1784A931A3C5BEE0034DE48</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>C1784A941A3C5BEE0034DE48</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>LaunchScreen.xib</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C1784A941A3C5BEE0034DE48</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.xib</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/LaunchScreen.xib</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C1784A951A3C5BEE0034DE48</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C1784A931A3C5BEE0034DE48</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C1784A961A3C5BEE0034DE48</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>C1784AA11A3C5BEE0034DE48</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>C1784A971A3C5BEE0034DE48</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>759F27179F68CC0EFC61F68D</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>C1784A981A3C5BEE0034DE48</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>C1784A991A3C5BEE0034DE48</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>C1784AA71A3C5BEE0034DE48</string>
-			<key>buildPhases</key>
-			<array>
-				<string>B454160FA4EBE2C646F3A9A5</string>
-				<string>C1784A961A3C5BEE0034DE48</string>
-				<string>C1784A971A3C5BEE0034DE48</string>
-				<string>C1784A981A3C5BEE0034DE48</string>
-				<string>906446413B69BBE5470C19C0</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>C1784A9C1A3C5BEE0034DE48</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>RedKittTests</string>
-			<key>productName</key>
-			<string>RedKittTests</string>
-			<key>productReference</key>
-			<string>C1784A9A1A3C5BEE0034DE48</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.unit-test</string>
-		</dict>
-		<key>C1784A9A1A3C5BEE0034DE48</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>RedKittTests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>C1784A9B1A3C5BEE0034DE48</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>C1784A791A3C5BEE0034DE48</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>C1784A801A3C5BEE0034DE48</string>
-			<key>remoteInfo</key>
-			<string>RedKitt</string>
-		</dict>
-		<key>C1784A9C1A3C5BEE0034DE48</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>C1784A801A3C5BEE0034DE48</string>
-			<key>targetProxy</key>
-			<string>C1784A9B1A3C5BEE0034DE48</string>
-		</dict>
-		<key>C1784A9D1A3C5BEE0034DE48</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>C1784AA01A3C5BEE0034DE48</string>
-				<string>C1784A9E1A3C5BEE0034DE48</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>RedKittTests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C1784A9E1A3C5BEE0034DE48</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>C1784A9F1A3C5BEE0034DE48</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C1784A9F1A3C5BEE0034DE48</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C1784AA01A3C5BEE0034DE48</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>RedKittTests.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C1784AA11A3C5BEE0034DE48</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C1784AA01A3C5BEE0034DE48</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C1784AA21A3C5BEE0034DE48</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.2</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>C1784AA31A3C5BEE0034DE48</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.2</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>C1784AA41A3C5BEE0034DE48</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>C1784AA51A3C5BEE0034DE48</string>
-				<string>C1784AA61A3C5BEE0034DE48</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>C1784AA51A3C5BEE0034DE48</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>0CC4F3D9F84E83F76B09D9E8</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>INFOPLIST_FILE</key>
-				<string>RedKitt/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>C1784AA61A3C5BEE0034DE48</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>09ADB89C3977FCF1F26B8024</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>INFOPLIST_FILE</key>
-				<string>RedKitt/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>C1784AA71A3C5BEE0034DE48</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>C1784AA81A3C5BEE0034DE48</string>
-				<string>C1784AA91A3C5BEE0034DE48</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>C1784AA81A3C5BEE0034DE48</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>DB058533139D50527F4880A0</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(TEST_HOST)</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>INFOPLIST_FILE</key>
-				<string>RedKittTests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUILT_PRODUCTS_DIR)/RedKitt.app/RedKitt</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>C1784AA91A3C5BEE0034DE48</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>51613CCC3A11A27939E8CB4F</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(TEST_HOST)</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>INFOPLIST_FILE</key>
-				<string>RedKittTests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUILT_PRODUCTS_DIR)/RedKitt.app/RedKitt</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>C1784AAA1A3C5CBE0034DE48</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>C1784A8E1A3C5BEE0034DE48</string>
-				<string>C1784A931A3C5BEE0034DE48</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>View</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C1784AAB1A3C5CC50034DE48</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>C1784AAC1A3C5CF00034DE48</string>
-				<string>C1784AAD1A3C5CF00034DE48</string>
-				<string>C1784AAF1A3C5CF90034DE48</string>
-				<string>C1784AB01A3C5CF90034DE48</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Controller</string>
-			<key>path</key>
-			<string>..</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C1784AAC1A3C5CF00034DE48</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>StartViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C1784AAD1A3C5CF00034DE48</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>StartViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C1784AAE1A3C5CF00034DE48</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C1784AAD1A3C5CF00034DE48</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C1784AAF1A3C5CF90034DE48</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>WebViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C1784AB01A3C5CF90034DE48</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>WebViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C1784AB11A3C5CF90034DE48</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C1784AB01A3C5CF90034DE48</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C1784AB21A3C5D210034DE48</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>C1784AC01A3C5D210034DE48</string>
-				<string>C1784ABD1A3C5D210034DE48</string>
-				<string>C1784AC31A3C5D210034DE48</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>C1784AB31A3C5D210034DE48</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>C1784AB41A3C5D210034DE48</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>C1784AC91A3C5D210034DE48</string>
-				<string>C1784AC51A3C5D210034DE48</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>C1784AB51A3C5D210034DE48</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>C1784AD91A3C5D210034DE48</string>
-			<key>buildPhases</key>
-			<array>
-				<string>C1784AB21A3C5D210034DE48</string>
-				<string>C1784AB31A3C5D210034DE48</string>
-				<string>C1784AB41A3C5D210034DE48</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>C1784ACB1A3C5D210034DE48</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>RedKitt WatchKit Extension</string>
-			<key>productName</key>
-			<string>RedKitt WatchKit Extension</string>
-			<key>productReference</key>
-			<string>C1784AB61A3C5D210034DE48</string>
-			<key>productType</key>
-			<string>com.apple.product-type.watchkit-extension</string>
-		</dict>
-		<key>C1784AB61A3C5D210034DE48</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.app-extension</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>RedKitt WatchKit Extension.appex</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>C1784AB71A3C5D210034DE48</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>C1784ABB1A3C5D210034DE48</string>
-				<string>C1784ABC1A3C5D210034DE48</string>
-				<string>C1784ABE1A3C5D210034DE48</string>
-				<string>C1784ABF1A3C5D210034DE48</string>
-				<string>C1784AC11A3C5D210034DE48</string>
-				<string>C1784AC21A3C5D210034DE48</string>
-				<string>C1784AC41A3C5D210034DE48</string>
-				<string>C1784AB81A3C5D210034DE48</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>RedKitt WatchKit Extension</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C1784AB81A3C5D210034DE48</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>C1784AB91A3C5D210034DE48</string>
-				<string>C1784ABA1A3C5D210034DE48</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C1784AB91A3C5D210034DE48</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C1784ABA1A3C5D210034DE48</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>path</key>
-			<string>PushNotificationPayload.apns</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C1784ABB1A3C5D210034DE48</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>InterfaceController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C1784ABC1A3C5D210034DE48</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>InterfaceController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C1784ABD1A3C5D210034DE48</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C1784ABC1A3C5D210034DE48</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C1784ABE1A3C5D210034DE48</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>NotificationController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C1784ABF1A3C5D210034DE48</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>NotificationController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C1784AC01A3C5D210034DE48</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C1784ABF1A3C5D210034DE48</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C1784AC11A3C5D210034DE48</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>GlanceController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C1784AC21A3C5D210034DE48</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>GlanceController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C1784AC31A3C5D210034DE48</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C1784AC21A3C5D210034DE48</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C1784AC41A3C5D210034DE48</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>folder.assetcatalog</string>
-			<key>path</key>
-			<string>Images.xcassets</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C1784AC51A3C5D210034DE48</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C1784AC41A3C5D210034DE48</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C1784AC61A3C5D210034DE48</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>C1784AD01A3C5D210034DE48</string>
-				<string>C1784AD21A3C5D210034DE48</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>C1784AC71A3C5D210034DE48</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>C1784AD61A3C5D210034DE48</string>
-			<key>buildPhases</key>
-			<array>
-				<string>C1784AC61A3C5D210034DE48</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>RedKitt WatchKit App</string>
-			<key>productName</key>
-			<string>RedKitt WatchKit App</string>
-			<key>productReference</key>
-			<string>C1784AC81A3C5D210034DE48</string>
-			<key>productType</key>
-			<string>com.apple.product-type.application.watchapp</string>
-		</dict>
-		<key>C1784AC81A3C5D210034DE48</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.application</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>RedKitt WatchKit App.app</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>C1784AC91A3C5D210034DE48</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C1784AC81A3C5D210034DE48</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C1784ACA1A3C5D210034DE48</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>C1784A791A3C5BEE0034DE48</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>C1784AC71A3C5D210034DE48</string>
-			<key>remoteInfo</key>
-			<string>RedKitt WatchKit App</string>
-		</dict>
-		<key>C1784ACB1A3C5D210034DE48</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>C1784AC71A3C5D210034DE48</string>
-			<key>targetProxy</key>
-			<string>C1784ACA1A3C5D210034DE48</string>
-		</dict>
-		<key>C1784ACC1A3C5D210034DE48</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>C1784ACF1A3C5D210034DE48</string>
-				<string>C1784AD11A3C5D210034DE48</string>
-				<string>C1784ACD1A3C5D210034DE48</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>RedKitt WatchKit App</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C1784ACD1A3C5D210034DE48</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>C1784ACE1A3C5D210034DE48</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C1784ACE1A3C5D210034DE48</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C1784ACF1A3C5D210034DE48</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>path</key>
-			<string>Interface.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C1784AD01A3C5D210034DE48</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C1784ACF1A3C5D210034DE48</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C1784AD11A3C5D210034DE48</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>folder.assetcatalog</string>
-			<key>path</key>
-			<string>Images.xcassets</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C1784AD21A3C5D210034DE48</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C1784AD11A3C5D210034DE48</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C1784AD31A3C5D210034DE48</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>C1784A791A3C5BEE0034DE48</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>C1784AB51A3C5D210034DE48</string>
-			<key>remoteInfo</key>
-			<string>RedKitt WatchKit Extension</string>
-		</dict>
-		<key>C1784AD41A3C5D210034DE48</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>C1784AB51A3C5D210034DE48</string>
-			<key>targetProxy</key>
-			<string>C1784AD31A3C5D210034DE48</string>
-		</dict>
-		<key>C1784AD51A3C5D210034DE48</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C1784AB61A3C5D210034DE48</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>RemoveHeadersOnCopy</string>
-				</array>
-			</dict>
-		</dict>
-		<key>C1784AD61A3C5D210034DE48</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>C1784AD71A3C5D210034DE48</string>
-				<string>C1784AD81A3C5D210034DE48</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>C1784AD71A3C5D210034DE48</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
-				<string>LaunchImage</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>IBSC_MODULE</key>
-				<string>RedKitt_WatchKit_Extension</string>
-				<key>INFOPLIST_FILE</key>
-				<string>RedKitt WatchKit App/Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>4</string>
-				<key>TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]</key>
-				<string>1,4</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>C1784AD81A3C5D210034DE48</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
-				<string>LaunchImage</string>
-				<key>IBSC_MODULE</key>
-				<string>RedKitt_WatchKit_Extension</string>
-				<key>INFOPLIST_FILE</key>
-				<string>RedKitt WatchKit App/Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>4</string>
-				<key>TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]</key>
-				<string>1,4</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>C1784AD91A3C5D210034DE48</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>C1784ADA1A3C5D210034DE48</string>
-				<string>C1784ADB1A3C5D210034DE48</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>C1784ADA1A3C5D210034DE48</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>INFOPLIST_FILE</key>
-				<string>RedKitt WatchKit Extension/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks</string>
-				<key>PRODUCT_NAME</key>
-				<string>${TARGET_NAME}</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>C1784ADB1A3C5D210034DE48</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>INFOPLIST_FILE</key>
-				<string>RedKitt WatchKit Extension/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks</string>
-				<key>PRODUCT_NAME</key>
-				<string>${TARGET_NAME}</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>C1784ADC1A3C5D210034DE48</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>dstPath</key>
-			<string></string>
-			<key>dstSubfolderSpec</key>
-			<string>13</string>
-			<key>files</key>
-			<array>
-				<string>C1784AD51A3C5D210034DE48</string>
-			</array>
-			<key>isa</key>
-			<string>PBXCopyFilesBuildPhase</string>
-			<key>name</key>
-			<string>Embed App Extensions</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>DB058533139D50527F4880A0</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-RedKittTests.debug.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-RedKittTests/Pods-RedKittTests.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EA3CF6892ECAC279909D3948</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>BBB9A221A2E343D7BBDBD4D1</string>
-				<string>A549F2B7018F17AB800F26AC</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>C1784A791A3C5BEE0034DE48</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3E81C6FB1A3C740100E90C68 /* RedKittTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E81C6FA1A3C740100E90C68 /* RedKittTask.m */; };
+		3E81C6FF1A3C783900E90C68 /* RedKittProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E81C6FE1A3C783900E90C68 /* RedKittProvider.m */; };
+		3E81C7021A3C795D00E90C68 /* RedKittTaskParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E81C7011A3C795D00E90C68 /* RedKittTaskParser.m */; };
+		3E81C7051A3C7AF000E90C68 /* RedKittProject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E81C7041A3C7AF000E90C68 /* RedKittProject.m */; };
+		3E81C7081A3C7E8700E90C68 /* RedboothAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E81C7071A3C7E8700E90C68 /* RedboothAPIClient.m */; };
+		759F27179F68CC0EFC61F68D /* libPods-RedKittTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A549F2B7018F17AB800F26AC /* libPods-RedKittTests.a */; };
+		BCEBE892A4ABA28E3B000C2B /* libPods-RedKitt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BBB9A221A2E343D7BBDBD4D1 /* libPods-RedKitt.a */; };
+		C1784A871A3C5BEE0034DE48 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C1784A861A3C5BEE0034DE48 /* main.m */; };
+		C1784A8A1A3C5BEE0034DE48 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C1784A891A3C5BEE0034DE48 /* AppDelegate.m */; };
+		C1784A901A3C5BEE0034DE48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1784A8E1A3C5BEE0034DE48 /* Main.storyboard */; };
+		C1784A921A3C5BEE0034DE48 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1784A911A3C5BEE0034DE48 /* Images.xcassets */; };
+		C1784A951A3C5BEE0034DE48 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1784A931A3C5BEE0034DE48 /* LaunchScreen.xib */; };
+		C1784AA11A3C5BEE0034DE48 /* RedKittTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C1784AA01A3C5BEE0034DE48 /* RedKittTests.m */; };
+		C1784AAE1A3C5CF00034DE48 /* StartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1784AAD1A3C5CF00034DE48 /* StartViewController.m */; };
+		C1784AB11A3C5CF90034DE48 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1784AB01A3C5CF90034DE48 /* WebViewController.m */; };
+		C1784ABD1A3C5D210034DE48 /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1784ABC1A3C5D210034DE48 /* InterfaceController.m */; };
+		C1784AC01A3C5D210034DE48 /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1784ABF1A3C5D210034DE48 /* NotificationController.m */; };
+		C1784AC31A3C5D210034DE48 /* GlanceController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1784AC21A3C5D210034DE48 /* GlanceController.m */; };
+		C1784AC51A3C5D210034DE48 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1784AC41A3C5D210034DE48 /* Images.xcassets */; };
+		C1784AC91A3C5D210034DE48 /* RedKitt WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = C1784AC81A3C5D210034DE48 /* RedKitt WatchKit App.app */; };
+		C1784AD01A3C5D210034DE48 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1784ACF1A3C5D210034DE48 /* Interface.storyboard */; };
+		C1784AD21A3C5D210034DE48 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1784AD11A3C5D210034DE48 /* Images.xcassets */; };
+		C1784AD51A3C5D210034DE48 /* RedKitt WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C1784AB61A3C5D210034DE48 /* RedKitt WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C1784A9B1A3C5BEE0034DE48 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C1784A791A3C5BEE0034DE48 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C1784A801A3C5BEE0034DE48;
+			remoteInfo = RedKitt;
+		};
+		C1784ACA1A3C5D210034DE48 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C1784A791A3C5BEE0034DE48 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C1784AC71A3C5D210034DE48;
+			remoteInfo = "RedKitt WatchKit App";
+		};
+		C1784AD31A3C5D210034DE48 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C1784A791A3C5BEE0034DE48 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C1784AB51A3C5D210034DE48;
+			remoteInfo = "RedKitt WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C1784ADC1A3C5D210034DE48 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C1784AD51A3C5D210034DE48 /* RedKitt WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		09ADB89C3977FCF1F26B8024 /* Pods-RedKitt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RedKitt.release.xcconfig"; path = "Pods/Target Support Files/Pods-RedKitt/Pods-RedKitt.release.xcconfig"; sourceTree = "<group>"; };
+		0CC4F3D9F84E83F76B09D9E8 /* Pods-RedKitt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RedKitt.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RedKitt/Pods-RedKitt.debug.xcconfig"; sourceTree = "<group>"; };
+		3E81C6F91A3C740100E90C68 /* RedKittTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedKittTask.h; sourceTree = "<group>"; };
+		3E81C6FA1A3C740100E90C68 /* RedKittTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedKittTask.m; sourceTree = "<group>"; };
+		3E81C6FD1A3C783900E90C68 /* RedKittProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedKittProvider.h; sourceTree = "<group>"; };
+		3E81C6FE1A3C783900E90C68 /* RedKittProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedKittProvider.m; sourceTree = "<group>"; };
+		3E81C7001A3C795D00E90C68 /* RedKittTaskParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedKittTaskParser.h; sourceTree = "<group>"; };
+		3E81C7011A3C795D00E90C68 /* RedKittTaskParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedKittTaskParser.m; sourceTree = "<group>"; };
+		3E81C7031A3C7AF000E90C68 /* RedKittProject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedKittProject.h; sourceTree = "<group>"; };
+		3E81C7041A3C7AF000E90C68 /* RedKittProject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedKittProject.m; sourceTree = "<group>"; };
+		3E81C7061A3C7E8700E90C68 /* RedboothAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedboothAPIClient.h; sourceTree = "<group>"; };
+		3E81C7071A3C7E8700E90C68 /* RedboothAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedboothAPIClient.m; sourceTree = "<group>"; };
+		51613CCC3A11A27939E8CB4F /* Pods-RedKittTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RedKittTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RedKittTests/Pods-RedKittTests.release.xcconfig"; sourceTree = "<group>"; };
+		A549F2B7018F17AB800F26AC /* libPods-RedKittTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RedKittTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBB9A221A2E343D7BBDBD4D1 /* libPods-RedKitt.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RedKitt.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1784A811A3C5BEE0034DE48 /* RedKitt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RedKitt.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1784A851A3C5BEE0034DE48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1784A861A3C5BEE0034DE48 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C1784A881A3C5BEE0034DE48 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C1784A891A3C5BEE0034DE48 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C1784A8F1A3C5BEE0034DE48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C1784A911A3C5BEE0034DE48 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C1784A941A3C5BEE0034DE48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		C1784A9A1A3C5BEE0034DE48 /* RedKittTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RedKittTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1784A9F1A3C5BEE0034DE48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1784AA01A3C5BEE0034DE48 /* RedKittTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RedKittTests.m; sourceTree = "<group>"; };
+		C1784AAC1A3C5CF00034DE48 /* StartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartViewController.h; sourceTree = "<group>"; };
+		C1784AAD1A3C5CF00034DE48 /* StartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartViewController.m; sourceTree = "<group>"; };
+		C1784AAF1A3C5CF90034DE48 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		C1784AB01A3C5CF90034DE48 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		C1784AB61A3C5D210034DE48 /* RedKitt WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "RedKitt WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1784AB91A3C5D210034DE48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1784ABA1A3C5D210034DE48 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		C1784ABB1A3C5D210034DE48 /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
+		C1784ABC1A3C5D210034DE48 /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
+		C1784ABE1A3C5D210034DE48 /* NotificationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationController.h; sourceTree = "<group>"; };
+		C1784ABF1A3C5D210034DE48 /* NotificationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationController.m; sourceTree = "<group>"; };
+		C1784AC11A3C5D210034DE48 /* GlanceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlanceController.h; sourceTree = "<group>"; };
+		C1784AC21A3C5D210034DE48 /* GlanceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GlanceController.m; sourceTree = "<group>"; };
+		C1784AC41A3C5D210034DE48 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C1784AC81A3C5D210034DE48 /* RedKitt WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RedKitt WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1784ACE1A3C5D210034DE48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1784ACF1A3C5D210034DE48 /* Interface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Interface.storyboard; sourceTree = "<group>"; };
+		C1784AD11A3C5D210034DE48 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DB058533139D50527F4880A0 /* Pods-RedKittTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RedKittTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RedKittTests/Pods-RedKittTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C1784A7E1A3C5BEE0034DE48 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCEBE892A4ABA28E3B000C2B /* libPods-RedKitt.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1784A971A3C5BEE0034DE48 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				759F27179F68CC0EFC61F68D /* libPods-RedKittTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1784AB31A3C5D210034DE48 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3E5D67241A3C739800B64B60 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3E81C6F91A3C740100E90C68 /* RedKittTask.h */,
+				3E81C6FA1A3C740100E90C68 /* RedKittTask.m */,
+				3E81C7031A3C7AF000E90C68 /* RedKittProject.h */,
+				3E81C7041A3C7AF000E90C68 /* RedKittProject.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		3E81C6FC1A3C780600E90C68 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				3E81C6FD1A3C783900E90C68 /* RedKittProvider.h */,
+				3E81C6FE1A3C783900E90C68 /* RedKittProvider.m */,
+				3E81C7001A3C795D00E90C68 /* RedKittTaskParser.h */,
+				3E81C7011A3C795D00E90C68 /* RedKittTaskParser.m */,
+				3E81C7061A3C7E8700E90C68 /* RedboothAPIClient.h */,
+				3E81C7071A3C7E8700E90C68 /* RedboothAPIClient.m */,
+			);
+			name = Provider;
+			sourceTree = "<group>";
+		};
+		8BF888915FD8B06F99B7B9C1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0CC4F3D9F84E83F76B09D9E8 /* Pods-RedKitt.debug.xcconfig */,
+				09ADB89C3977FCF1F26B8024 /* Pods-RedKitt.release.xcconfig */,
+				DB058533139D50527F4880A0 /* Pods-RedKittTests.debug.xcconfig */,
+				51613CCC3A11A27939E8CB4F /* Pods-RedKittTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C1784A781A3C5BEE0034DE48 = {
+			isa = PBXGroup;
+			children = (
+				C1784A831A3C5BEE0034DE48 /* RedKitt */,
+				C1784A9D1A3C5BEE0034DE48 /* RedKittTests */,
+				C1784AB71A3C5D210034DE48 /* RedKitt WatchKit Extension */,
+				C1784ACC1A3C5D210034DE48 /* RedKitt WatchKit App */,
+				C1784A821A3C5BEE0034DE48 /* Products */,
+				8BF888915FD8B06F99B7B9C1 /* Pods */,
+				EA3CF6892ECAC279909D3948 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C1784A821A3C5BEE0034DE48 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C1784A811A3C5BEE0034DE48 /* RedKitt.app */,
+				C1784A9A1A3C5BEE0034DE48 /* RedKittTests.xctest */,
+				C1784AB61A3C5D210034DE48 /* RedKitt WatchKit Extension.appex */,
+				C1784AC81A3C5D210034DE48 /* RedKitt WatchKit App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C1784A831A3C5BEE0034DE48 /* RedKitt */ = {
+			isa = PBXGroup;
+			children = (
+				3E5D67241A3C739800B64B60 /* Model */,
+				C1784A881A3C5BEE0034DE48 /* AppDelegate.h */,
+				C1784A891A3C5BEE0034DE48 /* AppDelegate.m */,
+				C1784AAB1A3C5CC50034DE48 /* Controller */,
+				C1784AAA1A3C5CBE0034DE48 /* View */,
+				C1784A911A3C5BEE0034DE48 /* Images.xcassets */,
+				C1784A841A3C5BEE0034DE48 /* Supporting Files */,
+			);
+			path = RedKitt;
+			sourceTree = "<group>";
+		};
+		C1784A841A3C5BEE0034DE48 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C1784A851A3C5BEE0034DE48 /* Info.plist */,
+				C1784A861A3C5BEE0034DE48 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C1784A9D1A3C5BEE0034DE48 /* RedKittTests */ = {
+			isa = PBXGroup;
+			children = (
+				C1784AA01A3C5BEE0034DE48 /* RedKittTests.m */,
+				C1784A9E1A3C5BEE0034DE48 /* Supporting Files */,
+			);
+			path = RedKittTests;
+			sourceTree = "<group>";
+		};
+		C1784A9E1A3C5BEE0034DE48 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C1784A9F1A3C5BEE0034DE48 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C1784AAA1A3C5CBE0034DE48 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C1784A8E1A3C5BEE0034DE48 /* Main.storyboard */,
+				C1784A931A3C5BEE0034DE48 /* LaunchScreen.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		C1784AAB1A3C5CC50034DE48 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3E81C6FC1A3C780600E90C68 /* Provider */,
+				C1784AAC1A3C5CF00034DE48 /* StartViewController.h */,
+				C1784AAD1A3C5CF00034DE48 /* StartViewController.m */,
+				C1784AAF1A3C5CF90034DE48 /* WebViewController.h */,
+				C1784AB01A3C5CF90034DE48 /* WebViewController.m */,
+			);
+			name = Controller;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		C1784AB71A3C5D210034DE48 /* RedKitt WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				C1784ABB1A3C5D210034DE48 /* InterfaceController.h */,
+				C1784ABC1A3C5D210034DE48 /* InterfaceController.m */,
+				C1784ABE1A3C5D210034DE48 /* NotificationController.h */,
+				C1784ABF1A3C5D210034DE48 /* NotificationController.m */,
+				C1784AC11A3C5D210034DE48 /* GlanceController.h */,
+				C1784AC21A3C5D210034DE48 /* GlanceController.m */,
+				C1784AC41A3C5D210034DE48 /* Images.xcassets */,
+				C1784AB81A3C5D210034DE48 /* Supporting Files */,
+			);
+			path = "RedKitt WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		C1784AB81A3C5D210034DE48 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C1784AB91A3C5D210034DE48 /* Info.plist */,
+				C1784ABA1A3C5D210034DE48 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C1784ACC1A3C5D210034DE48 /* RedKitt WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				C1784ACF1A3C5D210034DE48 /* Interface.storyboard */,
+				C1784AD11A3C5D210034DE48 /* Images.xcassets */,
+				C1784ACD1A3C5D210034DE48 /* Supporting Files */,
+			);
+			path = "RedKitt WatchKit App";
+			sourceTree = "<group>";
+		};
+		C1784ACD1A3C5D210034DE48 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C1784ACE1A3C5D210034DE48 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EA3CF6892ECAC279909D3948 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BBB9A221A2E343D7BBDBD4D1 /* libPods-RedKitt.a */,
+				A549F2B7018F17AB800F26AC /* libPods-RedKittTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C1784A801A3C5BEE0034DE48 /* RedKitt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1784AA41A3C5BEE0034DE48 /* Build configuration list for PBXNativeTarget "RedKitt" */;
+			buildPhases = (
+				AC9E2D9A3ABB5520B8D0F421 /* Check Pods Manifest.lock */,
+				C1784A7D1A3C5BEE0034DE48 /* Sources */,
+				C1784A7E1A3C5BEE0034DE48 /* Frameworks */,
+				C1784A7F1A3C5BEE0034DE48 /* Resources */,
+				C1784ADC1A3C5D210034DE48 /* Embed App Extensions */,
+				6F7532C4CB46B42027231270 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C1784AD41A3C5D210034DE48 /* PBXTargetDependency */,
+			);
+			name = RedKitt;
+			productName = RedKitt;
+			productReference = C1784A811A3C5BEE0034DE48 /* RedKitt.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C1784A991A3C5BEE0034DE48 /* RedKittTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1784AA71A3C5BEE0034DE48 /* Build configuration list for PBXNativeTarget "RedKittTests" */;
+			buildPhases = (
+				B454160FA4EBE2C646F3A9A5 /* Check Pods Manifest.lock */,
+				C1784A961A3C5BEE0034DE48 /* Sources */,
+				C1784A971A3C5BEE0034DE48 /* Frameworks */,
+				C1784A981A3C5BEE0034DE48 /* Resources */,
+				906446413B69BBE5470C19C0 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C1784A9C1A3C5BEE0034DE48 /* PBXTargetDependency */,
+			);
+			name = RedKittTests;
+			productName = RedKittTests;
+			productReference = C1784A9A1A3C5BEE0034DE48 /* RedKittTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C1784AB51A3C5D210034DE48 /* RedKitt WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1784AD91A3C5D210034DE48 /* Build configuration list for PBXNativeTarget "RedKitt WatchKit Extension" */;
+			buildPhases = (
+				C1784AB21A3C5D210034DE48 /* Sources */,
+				C1784AB31A3C5D210034DE48 /* Frameworks */,
+				C1784AB41A3C5D210034DE48 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C1784ACB1A3C5D210034DE48 /* PBXTargetDependency */,
+			);
+			name = "RedKitt WatchKit Extension";
+			productName = "RedKitt WatchKit Extension";
+			productReference = C1784AB61A3C5D210034DE48 /* RedKitt WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		C1784AC71A3C5D210034DE48 /* RedKitt WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1784AD61A3C5D210034DE48 /* Build configuration list for PBXNativeTarget "RedKitt WatchKit App" */;
+			buildPhases = (
+				C1784AC61A3C5D210034DE48 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RedKitt WatchKit App";
+			productName = "RedKitt WatchKit App";
+			productReference = C1784AC81A3C5D210034DE48 /* RedKitt WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C1784A791A3C5BEE0034DE48 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "Pol Quintana";
+				TargetAttributes = {
+					C1784A801A3C5BEE0034DE48 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					C1784A991A3C5BEE0034DE48 = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = C1784A801A3C5BEE0034DE48;
+					};
+					C1784AB51A3C5D210034DE48 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					C1784AC71A3C5D210034DE48 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+				};
+			};
+			buildConfigurationList = C1784A7C1A3C5BEE0034DE48 /* Build configuration list for PBXProject "RedKitt" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C1784A781A3C5BEE0034DE48;
+			productRefGroup = C1784A821A3C5BEE0034DE48 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C1784A801A3C5BEE0034DE48 /* RedKitt */,
+				C1784A991A3C5BEE0034DE48 /* RedKittTests */,
+				C1784AB51A3C5D210034DE48 /* RedKitt WatchKit Extension */,
+				C1784AC71A3C5D210034DE48 /* RedKitt WatchKit App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C1784A7F1A3C5BEE0034DE48 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1784A901A3C5BEE0034DE48 /* Main.storyboard in Resources */,
+				C1784A951A3C5BEE0034DE48 /* LaunchScreen.xib in Resources */,
+				C1784A921A3C5BEE0034DE48 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1784A981A3C5BEE0034DE48 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1784AB41A3C5D210034DE48 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1784AC91A3C5D210034DE48 /* RedKitt WatchKit App.app in Resources */,
+				C1784AC51A3C5D210034DE48 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1784AC61A3C5D210034DE48 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1784AD01A3C5D210034DE48 /* Interface.storyboard in Resources */,
+				C1784AD21A3C5D210034DE48 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6F7532C4CB46B42027231270 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RedKitt/Pods-RedKitt-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		906446413B69BBE5470C19C0 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RedKittTests/Pods-RedKittTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC9E2D9A3ABB5520B8D0F421 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B454160FA4EBE2C646F3A9A5 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C1784A7D1A3C5BEE0034DE48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1784AAE1A3C5CF00034DE48 /* StartViewController.m in Sources */,
+				3E81C7051A3C7AF000E90C68 /* RedKittProject.m in Sources */,
+				C1784A8A1A3C5BEE0034DE48 /* AppDelegate.m in Sources */,
+				3E81C6FB1A3C740100E90C68 /* RedKittTask.m in Sources */,
+				3E81C7021A3C795D00E90C68 /* RedKittTaskParser.m in Sources */,
+				C1784A871A3C5BEE0034DE48 /* main.m in Sources */,
+				3E81C6FF1A3C783900E90C68 /* RedKittProvider.m in Sources */,
+				C1784AB11A3C5CF90034DE48 /* WebViewController.m in Sources */,
+				3E81C7081A3C7E8700E90C68 /* RedboothAPIClient.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1784A961A3C5BEE0034DE48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1784AA11A3C5BEE0034DE48 /* RedKittTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1784AB21A3C5D210034DE48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1784AC01A3C5D210034DE48 /* NotificationController.m in Sources */,
+				C1784ABD1A3C5D210034DE48 /* InterfaceController.m in Sources */,
+				C1784AC31A3C5D210034DE48 /* GlanceController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C1784A9C1A3C5BEE0034DE48 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C1784A801A3C5BEE0034DE48 /* RedKitt */;
+			targetProxy = C1784A9B1A3C5BEE0034DE48 /* PBXContainerItemProxy */;
+		};
+		C1784ACB1A3C5D210034DE48 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C1784AC71A3C5D210034DE48 /* RedKitt WatchKit App */;
+			targetProxy = C1784ACA1A3C5D210034DE48 /* PBXContainerItemProxy */;
+		};
+		C1784AD41A3C5D210034DE48 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C1784AB51A3C5D210034DE48 /* RedKitt WatchKit Extension */;
+			targetProxy = C1784AD31A3C5D210034DE48 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C1784A8E1A3C5BEE0034DE48 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C1784A8F1A3C5BEE0034DE48 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C1784A931A3C5BEE0034DE48 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C1784A941A3C5BEE0034DE48 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C1784AA21A3C5BEE0034DE48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C1784AA31A3C5BEE0034DE48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C1784AA51A3C5BEE0034DE48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CC4F3D9F84E83F76B09D9E8 /* Pods-RedKitt.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RedKitt/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C1784AA61A3C5BEE0034DE48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09ADB89C3977FCF1F26B8024 /* Pods-RedKitt.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RedKitt/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C1784AA81A3C5BEE0034DE48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB058533139D50527F4880A0 /* Pods-RedKittTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RedKittTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RedKitt.app/RedKitt";
+			};
+			name = Debug;
+		};
+		C1784AA91A3C5BEE0034DE48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51613CCC3A11A27939E8CB4F /* Pods-RedKittTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RedKittTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RedKitt.app/RedKitt";
+			};
+			name = Release;
+		};
+		C1784AD71A3C5D210034DE48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = RedKitt_WatchKit_Extension;
+				INFOPLIST_FILE = "RedKitt WatchKit App/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		C1784AD81A3C5D210034DE48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				IBSC_MODULE = RedKitt_WatchKit_Extension;
+				INFOPLIST_FILE = "RedKitt WatchKit App/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		C1784ADA1A3C5D210034DE48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "RedKitt WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		C1784ADB1A3C5D210034DE48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "RedKitt WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C1784A7C1A3C5BEE0034DE48 /* Build configuration list for PBXProject "RedKitt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1784AA21A3C5BEE0034DE48 /* Debug */,
+				C1784AA31A3C5BEE0034DE48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1784AA41A3C5BEE0034DE48 /* Build configuration list for PBXNativeTarget "RedKitt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1784AA51A3C5BEE0034DE48 /* Debug */,
+				C1784AA61A3C5BEE0034DE48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1784AA71A3C5BEE0034DE48 /* Build configuration list for PBXNativeTarget "RedKittTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1784AA81A3C5BEE0034DE48 /* Debug */,
+				C1784AA91A3C5BEE0034DE48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1784AD61A3C5D210034DE48 /* Build configuration list for PBXNativeTarget "RedKitt WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1784AD71A3C5D210034DE48 /* Debug */,
+				C1784AD81A3C5D210034DE48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1784AD91A3C5D210034DE48 /* Build configuration list for PBXNativeTarget "RedKitt WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1784ADA1A3C5D210034DE48 /* Debug */,
+				C1784ADB1A3C5D210034DE48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C1784A791A3C5BEE0034DE48 /* Project object */;
+}
