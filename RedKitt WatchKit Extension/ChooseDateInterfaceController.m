@@ -1,21 +1,23 @@
 //
-//  AddTaskInterfaceController.m
+//  ChooseDateInterfaceController.m
 //  RedKitt
 //
 //  Created by Pol Quintana on 13/12/14.
 //  Copyright (c) 2014 Pol Quintana. All rights reserved.
 //
 
-#import "AddTaskInterfaceController.h"
 #import "ChooseDateInterfaceController.h"
 
 
-@interface AddTaskInterfaceController()
+@interface ChooseDateInterfaceController()
+
+@property (weak, nonatomic) IBOutlet WKInterfaceLabel *titleLabel;
+@property (nonatomic) CGFloat priority;
 
 @end
 
 
-@implementation AddTaskInterfaceController
+@implementation ChooseDateInterfaceController
 
 - (instancetype)initWithContext:(id)context {
     self = [super initWithContext:context];
@@ -23,6 +25,7 @@
         // Initialize variables here.
         // Configure interface objects here.
         NSLog(@"%@ initWithContext", self);
+        self.titleLabel.text = context;
     }
     return self;
 }
@@ -37,19 +40,26 @@
     NSLog(@"%@ did deactivate", self);
 }
 
-#pragma mark - Button
+#pragma mark - Set Task Priority
 
-- (IBAction)addTaskButtonTap {
-    NSArray *suggestions = [NSArray arrayWithObjects:@"Test Task", @"Test Task2", @"Test Task3", @"Test Task4", nil];
+- (IBAction)prioritySliderValueChanged:(float)value {
     
-    [self presentTextInputControllerWithSuggestions:suggestions allowedInputMode:WKTextInputModeAllowEmoji completion:^(NSArray *results) {
-        [self createTaskWithName:results[0]];
-    }];
+    self.priority = value;
+    
 }
 
-- (void)createTaskWithName:(NSString *)taskName {
-    NSLog(@"%@", taskName);
-    [self presentControllerWithName:@"ChooseDate" context:taskName];
+#pragma mark - Create Task
+
+- (IBAction)createTaskForToday {
+    
+}
+
+- (IBAction)createTaskForTomorrow {
+    
+}
+
+- (IBAction)createTaskForNextWeek {
+
 }
 
 

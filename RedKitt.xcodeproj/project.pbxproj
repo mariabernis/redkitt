@@ -10,6 +10,7 @@
 		759F27179F68CC0EFC61F68D /* libPods-RedKittTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A549F2B7018F17AB800F26AC /* libPods-RedKittTests.a */; };
 		BCEBE892A4ABA28E3B000C2B /* libPods-RedKitt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BBB9A221A2E343D7BBDBD4D1 /* libPods-RedKitt.a */; };
 		C13BD1791A3C7AAE005C7272 /* AddTaskInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = C13BD1781A3C7AAE005C7272 /* AddTaskInterfaceController.m */; };
+		C13BD17C1A3C7ED4005C7272 /* ChangeStatusInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = C13BD17B1A3C7ED4005C7272 /* ChangeStatusInterfaceController.m */; };
 		C1784A871A3C5BEE0034DE48 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C1784A861A3C5BEE0034DE48 /* main.m */; };
 		C1784A8A1A3C5BEE0034DE48 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C1784A891A3C5BEE0034DE48 /* AppDelegate.m */; };
 		C1784A901A3C5BEE0034DE48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1784A8E1A3C5BEE0034DE48 /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 		C1784AD01A3C5D210034DE48 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1784ACF1A3C5D210034DE48 /* Interface.storyboard */; };
 		C1784AD21A3C5D210034DE48 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1784AD11A3C5D210034DE48 /* Images.xcassets */; };
 		C1784AD51A3C5D210034DE48 /* RedKitt WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C1784AB61A3C5D210034DE48 /* RedKitt WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C193BBE91A3C83C400E45C61 /* ChooseDateInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = C193BBE81A3C83C400E45C61 /* ChooseDateInterfaceController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +76,8 @@
 		BBB9A221A2E343D7BBDBD4D1 /* libPods-RedKitt.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RedKitt.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C13BD1771A3C7AAE005C7272 /* AddTaskInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddTaskInterfaceController.h; sourceTree = "<group>"; };
 		C13BD1781A3C7AAE005C7272 /* AddTaskInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddTaskInterfaceController.m; sourceTree = "<group>"; };
+		C13BD17A1A3C7ED4005C7272 /* ChangeStatusInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangeStatusInterfaceController.h; sourceTree = "<group>"; };
+		C13BD17B1A3C7ED4005C7272 /* ChangeStatusInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangeStatusInterfaceController.m; sourceTree = "<group>"; };
 		C1784A811A3C5BEE0034DE48 /* RedKitt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RedKitt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1784A851A3C5BEE0034DE48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C1784A861A3C5BEE0034DE48 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -103,6 +107,8 @@
 		C1784ACE1A3C5D210034DE48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C1784ACF1A3C5D210034DE48 /* Interface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Interface.storyboard; sourceTree = "<group>"; };
 		C1784AD11A3C5D210034DE48 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C193BBE71A3C83C400E45C61 /* ChooseDateInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChooseDateInterfaceController.h; sourceTree = "<group>"; };
+		C193BBE81A3C83C400E45C61 /* ChooseDateInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChooseDateInterfaceController.m; sourceTree = "<group>"; };
 		DB058533139D50527F4880A0 /* Pods-RedKittTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RedKittTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RedKittTests/Pods-RedKittTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -232,9 +238,13 @@
 			isa = PBXGroup;
 			children = (
 				C1784ABB1A3C5D210034DE48 /* InterfaceController.h */,
+				C1784ABC1A3C5D210034DE48 /* InterfaceController.m */,
+				C13BD17A1A3C7ED4005C7272 /* ChangeStatusInterfaceController.h */,
+				C13BD17B1A3C7ED4005C7272 /* ChangeStatusInterfaceController.m */,
 				C13BD1771A3C7AAE005C7272 /* AddTaskInterfaceController.h */,
 				C13BD1781A3C7AAE005C7272 /* AddTaskInterfaceController.m */,
-				C1784ABC1A3C5D210034DE48 /* InterfaceController.m */,
+				C193BBE71A3C83C400E45C61 /* ChooseDateInterfaceController.h */,
+				C193BBE81A3C83C400E45C61 /* ChooseDateInterfaceController.m */,
 				C1784ABE1A3C5D210034DE48 /* NotificationController.h */,
 				C1784ABF1A3C5D210034DE48 /* NotificationController.m */,
 				C1784AC11A3C5D210034DE48 /* GlanceController.h */,
@@ -528,6 +538,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C193BBE91A3C83C400E45C61 /* ChooseDateInterfaceController.m in Sources */,
+				C13BD17C1A3C7ED4005C7272 /* ChangeStatusInterfaceController.m in Sources */,
 				C13BD1791A3C7AAE005C7272 /* AddTaskInterfaceController.m in Sources */,
 				C1784AC01A3C5D210034DE48 /* NotificationController.m in Sources */,
 				C1784ABD1A3C5D210034DE48 /* InterfaceController.m in Sources */,

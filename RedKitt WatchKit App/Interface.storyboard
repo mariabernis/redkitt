@@ -47,7 +47,7 @@
         <!--Back-->
         <scene sceneID="gNF-iO-spq">
             <objects>
-                <controller title="Back" id="LaQ-AY-gKs">
+                <controller title="Back" id="LaQ-AY-gKs" customClass="ChangeStatusInterfaceController">
                     <items>
                         <group width="1" alignment="left" hasDetent="YES" id="E19-4c-aot">
                             <items>
@@ -55,13 +55,31 @@
                                 <label width="100.5" height="30" alignment="left" text="Label" textAlignment="left" id="w1G-ES-mNh"/>
                             </items>
                         </group>
-                        <button width="1" alignment="left" verticalAlignment="bottom" title="Complete" id="Fsb-E7-9kx"/>
-                        <button width="1" alignment="left" verticalAlignment="bottom" title="Hold" id="QaN-ak-5eh"/>
-                        <button width="1" alignment="left" verticalAlignment="bottom" title="Reject" id="xBX-DT-4ka"/>
+                        <separator width="100" alignment="center" verticalAlignment="center" alpha="0.099999999999999686" id="Rim-bg-8Dd">
+                            <color key="color" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </separator>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Complete" id="Fsb-E7-9kx">
+                            <connections>
+                                <action selector="completeButtonTap" destination="LaQ-AY-gKs" id="NCS-4V-hr2"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Hold" id="QaN-ak-5eh">
+                            <connections>
+                                <action selector="holdButtonTap" destination="LaQ-AY-gKs" id="Ndt-9P-dMf"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Reject" id="xBX-DT-4ka">
+                            <connections>
+                                <action selector="rejectButtonTap" destination="LaQ-AY-gKs" id="LVw-3U-RrR"/>
+                            </connections>
+                        </button>
                     </items>
+                    <connections>
+                        <outlet property="rejectButtonOutlet" destination="xBX-DT-4ka" id="QuK-BG-gKS"/>
+                    </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="459" y="0.75"/>
+            <point key="canvasLocation" x="459" y="-20.5"/>
         </scene>
         <!--Interface Controller-->
         <scene sceneID="PmW-f9-L8q">
@@ -93,7 +111,7 @@
                         <button width="100" height="100" alignment="center" verticalAlignment="center" backgroundImage="add" id="r1C-js-3HH">
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             <connections>
-                                <segue destination="qFp-tj-Cdl" kind="modal" id="ZGp-li-Zl0"/>
+                                <action selector="addTaskButtonTap" destination="pH7-Zs-l1t" id="XEH-O3-6H7"/>
                             </connections>
                         </button>
                     </items>
@@ -101,12 +119,41 @@
             </objects>
             <point key="canvasLocation" x="889" y="305"/>
         </scene>
-        <!--Interface Controller-->
-        <scene sceneID="deK-cB-HLG">
+        <!--ChooseDate-->
+        <scene sceneID="rKo-ho-T6c">
             <objects>
-                <controller id="qFp-tj-Cdl"/>
+                <controller identifier="ChooseDate" id="NwZ-B0-xWR" customClass="ChooseDateInterfaceController">
+                    <items>
+                        <label width="1" alignment="left" text="Label" textAlignment="right" id="p77-oW-gfT"/>
+                        <slider width="1" height="24.5" alignment="left" value="0.5" steps="2" id="Ysc-ls-pUa">
+                            <connections>
+                                <action selector="prioritySliderValueChanged:" destination="NwZ-B0-xWR" id="hMC-bG-55N"/>
+                            </connections>
+                        </slider>
+                        <separator width="100" alignment="center" alpha="0.29999999999999999" id="OkE-Jr-oJo"/>
+                        <label alignment="center" text="Due date" id="chL-P6-Xiu"/>
+                        <button width="1" alignment="left" title="Today" id="nSG-MV-HwT">
+                            <connections>
+                                <action selector="createTaskForToday" destination="NwZ-B0-xWR" id="Hfz-B1-ubj"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Tomorrow" id="lFS-Gt-3PK">
+                            <connections>
+                                <action selector="createTaskForTomorrow" destination="NwZ-B0-xWR" id="eE7-mY-yRt"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Next Week" id="Hkd-Tf-w94">
+                            <connections>
+                                <action selector="createTaskForNextWeek" destination="NwZ-B0-xWR" id="YWt-kv-NZz"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="titleLabel" destination="p77-oW-gfT" id="EBD-j2-wnu"/>
+                    </connections>
+                </controller>
             </objects>
-            <point key="canvasLocation" x="889" y="612"/>
+            <point key="canvasLocation" x="889" y="548"/>
         </scene>
         <!--Glance Interface Controller-->
         <scene sceneID="BOz-TT-tkC">
