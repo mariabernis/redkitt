@@ -51,15 +51,29 @@
 #pragma mark - Create Task
 
 - (IBAction)createTaskForToday {
-    
+    NSDate *todayDate = [NSDate date];
+    [self showCompletedView];
 }
 
 - (IBAction)createTaskForTomorrow {
-    
+    NSDate *tomorrowDate = [NSDate dateWithTimeIntervalSinceNow:60*60*24];
+    [self showCompletedView];
+
 }
 
 - (IBAction)createTaskForNextWeek {
+    NSDate *nextWeekDate = [NSDate dateWithTimeIntervalSinceNow:60*60*24*7];
+    [self showCompletedView];
 
+}
+
+#pragma mark - Task Created
+
+- (void)showCompletedView {
+    [self presentControllerWithName:@"TaskResult" context:nil];
+    
+    [self performSelector:@selector(dismissController) withObject:nil afterDelay:2];
+    [self performSelector:@selector(dismissController) withObject:nil afterDelay:2];
 }
 
 

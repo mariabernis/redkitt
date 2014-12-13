@@ -79,7 +79,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="459" y="-20.5"/>
+            <point key="canvasLocation" x="459" y="40.5"/>
         </scene>
         <!--Interface Controller-->
         <scene sceneID="PmW-f9-L8q">
@@ -108,6 +108,7 @@
             <objects>
                 <controller id="pH7-Zs-l1t" customClass="AddTaskInterfaceController">
                     <items>
+                        <label alignment="center" text="Create task" id="EWY-zF-dxr"/>
                         <button width="100" height="100" alignment="center" verticalAlignment="center" backgroundImage="add" id="r1C-js-3HH">
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             <connections>
@@ -118,6 +119,19 @@
                 </controller>
             </objects>
             <point key="canvasLocation" x="889" y="305"/>
+        </scene>
+        <!-- -->
+        <scene sceneID="bP4-Vl-fhw">
+            <objects>
+                <controller identifier="TaskResult" title=" " id="H9g-CZ-f33">
+                    <items>
+                        <label alignment="center" text="Done" id="hDT-fE-dbQ"/>
+                        <imageView width="100" height="100" alignment="center" verticalAlignment="center" image="done" contentMode="scaleAspectFit" id="5MH-5G-gNI"/>
+                    </items>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1108" y="305"/>
         </scene>
         <!--ChooseDate-->
         <scene sceneID="rKo-ho-T6c">
@@ -153,15 +167,22 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="889" y="548"/>
+            <point key="canvasLocation" x="889" y="562.25"/>
         </scene>
         <!--Glance Interface Controller-->
         <scene sceneID="BOz-TT-tkC">
             <objects>
-                <glanceController spacing="0.0" id="0uZ-2p-rRc" customClass="GlanceController">
+                <glanceController spacing="0.0" bottomTemplateType="body1LargeBody3Footer" id="0uZ-2p-rRc" customClass="GlanceController">
                     <items>
-                        <group alignment="left" id="t8f-Gd-c4y"/>
-                        <group alignment="left" id="uCw-4Q-Ouw"/>
+                        <group alignment="left" id="t8f-Gd-c4y">
+                            <items>
+                                <imageView width="50" height="50" alignment="left" image="default" id="Y08-mb-JlO"/>
+                            </items>
+                        </group>
+                        <label alignment="left" text="LIMIT DATE" id="PKi-Ct-bd7"/>
+                        <label alignment="left" text="20 DEC" id="kIf-al-Ex6"/>
+                        <label alignment="left" text="This app must be finished today." id="t0P-9Q-dhp"/>
+                        <label alignment="left" id="9lT-3V-zjI"/>
                     </items>
                     <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="14"/>
                 </glanceController>
