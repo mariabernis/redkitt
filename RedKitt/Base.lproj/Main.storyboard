@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6724" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6724" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6711"/>
     </dependencies>
@@ -25,8 +25,26 @@
                                     <segue destination="EGu-K9-cDF" kind="presentation" id="dl5-n4-wUM"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lkc-TD-jpu">
+                                <rect key="frame" x="20" y="277" width="560" height="45"/>
+                                <color key="backgroundColor" red="0.82564979790000004" green="0.2736479342" blue="0.2110961676" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="0CC-b4-HI9"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="45" id="Jly-0R-cQl"/>
+                                </constraints>
+                                <state key="normal" title="Connect to Redbooth" image="ic_redbooth_white_30">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="Lkc-TD-jpu" secondAttribute="centerX" id="72T-rg-odB"/>
+                            <constraint firstAttribute="trailing" secondItem="Lkc-TD-jpu" secondAttribute="trailing" constant="20" id="Vku-DQ-EHO"/>
+                            <constraint firstAttribute="centerY" secondItem="Lkc-TD-jpu" secondAttribute="centerY" id="YTl-20-1x8"/>
+                            <constraint firstItem="Lkc-TD-jpu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="gnc-UJ-kJC"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -45,12 +63,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uWi-fJ-RgT">
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uWi-fJ-RgT">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="uWi-fJ-RgT" secondAttribute="trailing" id="BAl-MJ-7cb"/>
+                            <constraint firstItem="CTc-uV-K79" firstAttribute="top" secondItem="uWi-fJ-RgT" secondAttribute="bottom" id="Khj-yD-bJI"/>
+                            <constraint firstItem="uWi-fJ-RgT" firstAttribute="leading" secondItem="v7c-t5-wMI" secondAttribute="leading" id="klr-JN-70P"/>
+                            <constraint firstItem="uWi-fJ-RgT" firstAttribute="top" secondItem="v7c-t5-wMI" secondAttribute="top" id="xsA-WR-XKN"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h8Y-oF-2Tr" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -58,4 +82,7 @@
             <point key="canvasLocation" x="1258" y="361"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ic_redbooth_white_30" width="19" height="30"/>
+    </resources>
 </document>
