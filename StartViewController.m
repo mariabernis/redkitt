@@ -7,6 +7,7 @@
 //
 
 #import "StartViewController.h"
+#import "RedboothAPIClient.h"
 
 @interface StartViewController ()
 
@@ -22,6 +23,12 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - Actions
+- (IBAction)loginButtonPressed:(id)sender {
+    
+    [[RedboothAPIClient sharedInstance] launchAuthorizationFlow];
 }
 
 /*
