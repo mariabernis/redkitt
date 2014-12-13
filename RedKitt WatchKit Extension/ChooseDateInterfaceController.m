@@ -70,7 +70,7 @@
 #pragma mark - Task Created
 
 - (void)showCompletedView {
-    [self presentControllerWithName:@"TaskResult" context:nil];
+    [self presentControllerWithName:@"Done" context:nil];
     
     [self performSelector:@selector(dismissController) withObject:nil afterDelay:2];
     [self performSelector:@selector(dismissController) withObject:nil afterDelay:2];

@@ -156,7 +156,7 @@
                                 <button width="0.5" alignment="left" title="..." id="6jw-WI-teZ">
                                     <fontDescription key="font" type="system" pointSize="11"/>
                                     <connections>
-                                        <action selector="changeStatusButtonTap" destination="Xds-ir-4eY" id="cME-H4-JBW"/>
+                                        <action selector="changeStatusButtonTap" destination="Xds-ir-4eY" id="15n-QH-XUp"/>
                                     </connections>
                                 </button>
                             </items>
@@ -192,7 +192,7 @@
         <!-- -->
         <scene sceneID="bP4-Vl-fhw">
             <objects>
-                <controller identifier="TaskResult" title=" " id="H9g-CZ-f33">
+                <controller identifier="Done" title=" " id="H9g-CZ-f33">
                     <items>
                         <label alignment="center" text="Done" id="hDT-fE-dbQ"/>
                         <imageView width="100" height="100" alignment="center" verticalAlignment="center" image="done" contentMode="scaleAspectFit" id="5MH-5G-gNI"/>

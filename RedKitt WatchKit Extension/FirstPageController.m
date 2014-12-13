@@ -60,7 +60,8 @@
 #pragma mark - Buttons
 
 - (IBAction)markTaskAsCompleted {
-    
+    [self presentControllerWithName:@"Done" context:nil];
+    [self performSelector:@selector(dismissController) withObject:nil afterDelay:2];
 }
 
 - (IBAction)changeStatusButtonTap {
